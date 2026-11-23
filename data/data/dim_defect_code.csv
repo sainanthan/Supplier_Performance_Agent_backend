@@ -1,0 +1,13 @@
+defect_code,defect_name,defect_category,severity,disposition_default
+D001,Solder Bridge,SMT,MAJOR,REWORK
+D002,Missing Component,SMT,CRITICAL,REWORK
+D003,Tombstoning,SMT,MAJOR,REWORK
+D004,Display Dead Pixel,DISPLAY,MAJOR,REJECT
+D005,Battery Swelling,BATTERY,CRITICAL,SCRAP
+D006,Camera Focus Failure,CAMERA,MAJOR,REWORK
+D007,Cosmetic Scratch,COSMETIC,MINOR,REWORK
+D008,USB-C Charging Failure,FUNCTIONAL,MAJOR,REWORK
+D009,RF Sensitivity Failure,RF,MAJOR,REWORK
+D010,Speaker Distortion,AUDIO,MINOR,REWORK
+D011,IMEI Label Mismatch,TRACEABILITY,CRITICAL,HOLD
+D012,Back Cover Gap,ASSEMBLY,MAJOR,REWORK

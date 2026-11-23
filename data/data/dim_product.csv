@@ -1,0 +1,4 @@
+product_id,product_name,product_family,ram,storage,display,model_revision,standard_cycle_sec,standard_unit_cost_inr,active_from,active_to
+SPH-A15-128,Aster 15 128GB,Mid-range,8GB,128GB,6.5in AMOLED,REV-C,48,11800,2026-07-01,2027-12-31
+SPH-A15-256,Aster 15 256GB,Mid-range,8GB,256GB,6.5in AMOLED,REV-C,42,22100,2026-07-01,2027-12-31
+SPH-PRO-256,Aster Pro 256GB,Premium,12GB,256GB,6.7in AMOLED,REV-C,45,11800,2026-07-01,2027-12-31

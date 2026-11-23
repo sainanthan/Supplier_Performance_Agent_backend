@@ -1,0 +1,5 @@
+customer_id,customer_name,country,segment,service_level,preferred_carrier
+CUS-001,Retailer North,India,Enterprise,OTIF-95,DHL
+CUS-002,MobileMart,India,Enterprise,OTIF-95,BlueDart
+CUS-003,Digital Bazaar,India,Distributor,OTIF-95,DHL
+CUS-004,Global Devices,India,Distributor,OTIF-95,DHL

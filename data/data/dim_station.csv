@@ -1,0 +1,22 @@
+station_id,station_name,process_area,sequence_no,critical_control_point
+ST-SMT-010,PCB Laser Marking,SMT,1,True
+ST-SMT-020,Solder Paste Printing,SMT,2,True
+ST-SMT-030,SPI Inspection,SMT,3,True
+ST-SMT-040,Pick and Place,SMT,4,True
+ST-SMT-050,Reflow Soldering,SMT,5,True
+ST-SMT-060,AOI Inspection,SMT,6,True
+ST-SMT-070,X-Ray Inspection,SMT,7,True
+ST-SMT-080,PCBA Functional Test,SMT,8,True
+ST-FAL-010,Display and Frame Assembly,FINAL_ASSEMBLY,1,False
+ST-FAL-020,Mainboard Integration,FINAL_ASSEMBLY,2,False
+ST-FAL-030,Camera and Sensor Assembly,FINAL_ASSEMBLY,3,False
+ST-FAL-040,Battery Installation,FINAL_ASSEMBLY,4,False
+ST-FAL-050,Back Cover and Sealing,FINAL_ASSEMBLY,5,False
+ST-TST-010,Software Flashing,TEST,1,True
+ST-TST-020,RF and Network Test,TEST,2,True
+ST-TST-030,Camera and Audio Test,TEST,3,True
+ST-TST-040,Charging and Battery Test,TEST,4,True
+ST-TST-050,Aging Test,TEST,5,True
+ST-QA-010,Cosmetic Inspection,QUALITY,1,True
+ST-PKG-010,IMEI Label and Packaging,PACKAGING,1,False
+ST-FG-010,Finished Goods Audit,WAREHOUSE,1,False

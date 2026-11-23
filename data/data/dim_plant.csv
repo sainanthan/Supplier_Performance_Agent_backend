@@ -1,0 +1,3 @@
+plant_id,plant_name,country,state,timezone,calendar_id,currency
+IN-TN-01,Chennai Electronics Plant,India,Tamil Nadu,Asia/Kolkata,CAL-IN-01,INR
+IN-KA-01,Bengaluru Electronics Plant,India,Karnataka,Asia/Kolkata,CAL-IN-01,INR

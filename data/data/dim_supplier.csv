@@ -1,0 +1,11 @@
+supplier_id,supplier_name,country,material_category,approved_status,quality_certification,standard_lead_time_days,payment_terms,risk_tier
+SUP-001,Shenzhen Silicon Systems,China,SEMICONDUCTOR,APPROVED,ISO 14001,18,NET 45,HIGH
+SUP-002,Korea Memory Tech,South Korea,SEMICONDUCTOR,APPROVED,ISO 9001,9,NET 45,LOW
+SUP-003,Taiwan PCB Works,Taiwan,PCB,APPROVED,ISO 14001,14,NET 45,MEDIUM
+SUP-004,Chennai Display Components,India,DISPLAY,APPROVED,ISO 9001,14,NET 45,LOW
+SUP-005,VoltCell Energy,India,BATTERY,APPROVED,IATF 16949,15,NET 45,MEDIUM
+SUP-006,OptiCam Modules,Vietnam,CAMERA,APPROVED,ISO 14001,18,NET 45,LOW
+SUP-007,Precision Enclosures,India,MECHANICAL,APPROVED,IATF 16949,18,NET 45,LOW
+SUP-008,Global Pack Solutions,India,PACKAGING,APPROVED,ISO 14001,15,NET 45,HIGH
+SUP-009,RF Connect Systems,Japan,RF,APPROVED,ISO 14001,27,NET 45,LOW
+SUP-010,SolderPro Materials,Singapore,CONSUMABLE,APPROVED,ISO 14001,27,NET 45,LOW

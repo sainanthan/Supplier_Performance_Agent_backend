@@ -1,0 +1,501 @@
+decision_id,review_date,plant_id,kpi_name,actual_value,target_value,variance_pct,risk_level,evidence_table,recommended_action,decision_owner,decision_status
+DEC-00001,2026-08-25,IN-TN-01,DOWNTIME_MIN,90.28,90,2.78,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0074,COMPLETED
+DEC-00002,2026-08-31,IN-TN-01,OEE,80.23,90,3.94,HIGH,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0136,APPROVED
+DEC-00003,2026-09-05,IN-KA-01,OTIF,90.78,90,-6.35,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0081,APPROVED
+DEC-00004,2026-10-20,IN-TN-01,FPY,97.26,98,-2.13,LOW,fact_hourly_production,Expedite critical component,EMP-0159,COMPLETED
+DEC-00005,2026-08-11,IN-KA-01,ENERGY_PER_UNIT,96.79,98,-7.11,HIGH,fact_hourly_production,Review top downtime loss,EMP-0169,COMPLETED
+DEC-00006,2026-10-02,IN-KA-01,COST_PER_UNIT,71.88,90,-1.77,HIGH,fact_hourly_production,Rebalance line staffing,EMP-0167,REJECTED
+DEC-00007,2026-10-23,IN-TN-01,ENERGY_PER_UNIT,78.33,90,2.7,LOW,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0115,COMPLETED
+DEC-00008,2026-10-08,IN-KA-01,OEE,89.19,95,-7.57,LOW,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0146,REJECTED
+DEC-00009,2026-08-01,IN-TN-01,COST_PER_UNIT,98.95,98,-3.55,HIGH,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0101,OPEN
+DEC-00010,2026-10-23,IN-KA-01,FPY,98.5,98,-4.0,HIGH,fact_hourly_production,Contain affected material lot,EMP-0106,REJECTED
+DEC-00011,2026-09-25,IN-TN-01,ENERGY_PER_UNIT,82.67,98,-10.25,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0069,APPROVED
+DEC-00012,2026-09-28,IN-TN-01,OEE,96.64,90,-3.73,LOW,fact_quality_inspection,Contain affected material lot,EMP-0156,REJECTED
+DEC-00013,2026-10-17,IN-TN-01,FPY,84.78,90,-4.3,HIGH,fact_quality_inspection,Expedite critical component,EMP-0107,REJECTED
+DEC-00014,2026-10-14,IN-TN-01,DOWNTIME_MIN,75.86,90,0.4,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0115,COMPLETED
+DEC-00015,2026-10-22,IN-KA-01,DOWNTIME_MIN,90.17,98,-0.34,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0118,COMPLETED
+DEC-00016,2026-09-17,IN-TN-01,OTIF,81.99,95,-2.58,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0051,OPEN
+DEC-00017,2026-08-29,IN-TN-01,DOWNTIME_MIN,71.07,98,-7.88,HIGH,fact_hourly_production,Expedite critical component,EMP-0086,OPEN
+DEC-00018,2026-08-04,IN-TN-01,FPY,90.69,95,0.99,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0177,REJECTED
+DEC-00019,2026-09-24,IN-TN-01,DOWNTIME_MIN,93.43,98,-10.08,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0176,REJECTED
+DEC-00020,2026-08-06,IN-KA-01,DOWNTIME_MIN,78.94,95,-5.68,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0170,OPEN
+DEC-00021,2026-10-12,IN-TN-01,OEE,97.59,95,3.47,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0177,OPEN
+DEC-00022,2026-08-07,IN-KA-01,COST_PER_UNIT,70.02,90,-3.49,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0025,APPROVED
+DEC-00023,2026-10-04,IN-TN-01,OEE,83.63,95,-10.4,HIGH,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0169,OPEN
+DEC-00024,2026-09-23,IN-TN-01,FPY,83.48,90,-11.85,LOW,fact_hourly_production,Rebalance line staffing,EMP-0051,REJECTED
+DEC-00025,2026-08-18,IN-TN-01,DOWNTIME_MIN,71.29,95,-4.35,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0172,APPROVED
+DEC-00026,2026-10-27,IN-KA-01,OEE,88.01,90,-8.06,HIGH,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0080,OPEN
+DEC-00027,2026-08-09,IN-KA-01,OTIF,94.74,98,-4.48,LOW,fact_quality_inspection,Expedite critical component,EMP-0131,COMPLETED
+DEC-00028,2026-09-02,IN-KA-01,OTIF,80.34,95,-11.87,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0068,APPROVED
+DEC-00029,2026-09-10,IN-TN-01,ENERGY_PER_UNIT,91.83,90,7.57,HIGH,fact_hourly_production,Investigate energy baseload,EMP-0159,COMPLETED
+DEC-00030,2026-08-13,IN-TN-01,FPY,84.49,95,3.55,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0110,APPROVED
+DEC-00031,2026-09-30,IN-TN-01,OEE,91.94,95,-6.46,HIGH,fact_hourly_production,Contain affected material lot,EMP-0068,OPEN
+DEC-00032,2026-08-30,IN-KA-01,FPY,94.48,95,2.04,LOW,fact_hourly_production,Investigate energy baseload,EMP-0100,COMPLETED
+DEC-00033,2026-10-18,IN-KA-01,ENERGY_PER_UNIT,82.62,90,7.51,HIGH,fact_hourly_production,Investigate energy baseload,EMP-0066,APPROVED
+DEC-00034,2026-09-14,IN-TN-01,FPY,74.53,95,-9.44,HIGH,fact_hourly_production,Expedite critical component,EMP-0019,REJECTED
+DEC-00035,2026-10-02,IN-KA-01,OEE,84.12,95,5.87,LOW,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0099,REJECTED
+DEC-00036,2026-08-20,IN-TN-01,FPY,94.99,90,-2.11,HIGH,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0088,COMPLETED
+DEC-00037,2026-08-02,IN-TN-01,DOWNTIME_MIN,83.18,95,-6.08,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0004,APPROVED
+DEC-00038,2026-10-22,IN-KA-01,COST_PER_UNIT,87.27,95,-7.59,HIGH,fact_hourly_production,Expedite critical component,EMP-0173,COMPLETED
+DEC-00039,2026-08-14,IN-TN-01,OEE,83.42,95,-6.05,HIGH,fact_hourly_production,Expedite critical component,EMP-0148,APPROVED
+DEC-00040,2026-10-13,IN-TN-01,FPY,76.96,95,-11.55,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0114,APPROVED
+DEC-00041,2026-08-27,IN-TN-01,ENERGY_PER_UNIT,85.21,95,-10.36,LOW,fact_quality_inspection,Investigate energy baseload,EMP-0120,OPEN
+DEC-00042,2026-10-03,IN-KA-01,ENERGY_PER_UNIT,79.95,90,1.51,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0156,OPEN
+DEC-00043,2026-08-08,IN-TN-01,OTIF,79.33,98,3.31,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0127,REJECTED
+DEC-00044,2026-08-25,IN-KA-01,OTIF,89.06,95,-9.13,HIGH,fact_hourly_production,Review top downtime loss,EMP-0108,COMPLETED
+DEC-00045,2026-09-02,IN-TN-01,COST_PER_UNIT,81.8,95,2.55,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0032,OPEN
+DEC-00046,2026-08-22,IN-TN-01,OEE,82.99,95,-4.4,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0008,COMPLETED
+DEC-00047,2026-08-30,IN-KA-01,OEE,98.5,90,-11.71,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0039,APPROVED
+DEC-00048,2026-08-23,IN-TN-01,OTIF,91.82,95,2.04,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0023,OPEN
+DEC-00049,2026-10-13,IN-KA-01,COST_PER_UNIT,87.15,95,7.2,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0155,COMPLETED
+DEC-00050,2026-09-14,IN-TN-01,OEE,78.97,98,1.81,HIGH,fact_quality_inspection,Investigate energy baseload,EMP-0051,REJECTED
+DEC-00051,2026-08-05,IN-TN-01,COST_PER_UNIT,85.37,98,-3.86,HIGH,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0040,REJECTED
+DEC-00052,2026-08-03,IN-TN-01,ENERGY_PER_UNIT,96.07,98,-5.3,LOW,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0117,REJECTED
+DEC-00053,2026-10-28,IN-KA-01,COST_PER_UNIT,76.86,98,-0.35,HIGH,fact_quality_inspection,Investigate energy baseload,EMP-0144,OPEN
+DEC-00054,2026-08-13,IN-TN-01,FPY,78.57,95,7.95,LOW,fact_hourly_production,Investigate energy baseload,EMP-0135,APPROVED
+DEC-00055,2026-10-21,IN-KA-01,FPY,79.89,98,-5.77,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0005,APPROVED
+DEC-00056,2026-10-11,IN-KA-01,COST_PER_UNIT,89.31,95,-10.79,LOW,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0107,APPROVED
+DEC-00057,2026-09-13,IN-TN-01,OEE,70.94,95,-11.68,MEDIUM,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0118,APPROVED
+DEC-00058,2026-09-17,IN-TN-01,DOWNTIME_MIN,82.26,90,7.55,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0022,REJECTED
+DEC-00059,2026-10-18,IN-TN-01,DOWNTIME_MIN,98.43,98,-2.68,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0155,OPEN
+DEC-00060,2026-08-23,IN-KA-01,OEE,94.44,90,-10.61,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0134,OPEN
+DEC-00061,2026-08-24,IN-KA-01,FPY,85.28,98,-0.6,MEDIUM,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0126,OPEN
+DEC-00062,2026-08-25,IN-KA-01,OEE,78.3,95,-8.74,HIGH,fact_hourly_production,Expedite critical component,EMP-0131,REJECTED
+DEC-00063,2026-10-20,IN-KA-01,ENERGY_PER_UNIT,76.53,90,-4.81,HIGH,fact_hourly_production,Review top downtime loss,EMP-0013,REJECTED
+DEC-00064,2026-08-13,IN-TN-01,OTIF,83.14,95,-2.2,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0177,REJECTED
+DEC-00065,2026-10-18,IN-TN-01,OTIF,89.66,90,4.17,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0056,APPROVED
+DEC-00066,2026-09-27,IN-KA-01,FPY,71.8,95,4.41,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0037,OPEN
+DEC-00067,2026-09-30,IN-TN-01,DOWNTIME_MIN,96.5,90,-8.32,LOW,fact_hourly_production,Investigate energy baseload,EMP-0022,OPEN
+DEC-00068,2026-08-21,IN-TN-01,OTIF,94.2,95,6.37,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0175,COMPLETED
+DEC-00069,2026-10-27,IN-KA-01,OTIF,77.35,95,-7.92,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0126,OPEN
+DEC-00070,2026-10-01,IN-TN-01,COST_PER_UNIT,94.15,90,7.77,MEDIUM,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0110,REJECTED
+DEC-00071,2026-08-04,IN-KA-01,COST_PER_UNIT,75.21,98,-9.9,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0157,REJECTED
+DEC-00072,2026-10-15,IN-KA-01,OEE,89.21,90,6.75,LOW,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0101,REJECTED
+DEC-00073,2026-08-11,IN-TN-01,OEE,84.49,95,7.28,LOW,fact_quality_inspection,Rebalance line staffing,EMP-0089,APPROVED
+DEC-00074,2026-10-13,IN-KA-01,COST_PER_UNIT,72.89,98,4.0,LOW,fact_quality_inspection,Review top downtime loss,EMP-0159,REJECTED
+DEC-00075,2026-10-21,IN-KA-01,OEE,70.54,98,3.49,HIGH,fact_hourly_production,Expedite critical component,EMP-0128,APPROVED
+DEC-00076,2026-10-24,IN-KA-01,COST_PER_UNIT,84.89,95,-4.1,HIGH,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0125,APPROVED
+DEC-00077,2026-09-15,IN-TN-01,DOWNTIME_MIN,86.53,95,0.5,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0105,COMPLETED
+DEC-00078,2026-10-03,IN-TN-01,OTIF,84.83,98,6.16,HIGH,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0046,APPROVED
+DEC-00079,2026-08-30,IN-TN-01,DOWNTIME_MIN,77.58,98,6.63,LOW,fact_hourly_production,Review top downtime loss,EMP-0050,COMPLETED
+DEC-00080,2026-08-15,IN-KA-01,ENERGY_PER_UNIT,74.92,90,7.21,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0085,APPROVED
+DEC-00081,2026-08-17,IN-KA-01,DOWNTIME_MIN,77.7,98,-1.18,LOW,fact_hourly_production,Investigate energy baseload,EMP-0020,COMPLETED
+DEC-00082,2026-09-23,IN-KA-01,OTIF,88.23,95,0.18,LOW,fact_hourly_production,Investigate energy baseload,EMP-0049,REJECTED
+DEC-00083,2026-09-18,IN-TN-01,COST_PER_UNIT,76.2,90,-7.4,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0134,REJECTED
+DEC-00084,2026-08-26,IN-TN-01,OTIF,93.91,95,5.13,LOW,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0134,REJECTED
+DEC-00085,2026-10-10,IN-TN-01,DOWNTIME_MIN,97.72,98,-8.1,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0125,COMPLETED
+DEC-00086,2026-09-23,IN-TN-01,FPY,83.17,98,-1.4,HIGH,fact_hourly_production,Review top downtime loss,EMP-0126,REJECTED
+DEC-00087,2026-08-14,IN-KA-01,DOWNTIME_MIN,81.09,95,1.54,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0023,OPEN
+DEC-00088,2026-09-01,IN-TN-01,OEE,91.74,98,-8.45,MEDIUM,fact_quality_inspection,Expedite critical component,EMP-0146,COMPLETED
+DEC-00089,2026-08-31,IN-KA-01,FPY,79.18,90,3.76,HIGH,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0164,REJECTED
+DEC-00090,2026-08-30,IN-KA-01,OTIF,98.32,90,-11.91,HIGH,fact_hourly_production,Review top downtime loss,EMP-0140,COMPLETED
+DEC-00091,2026-08-23,IN-TN-01,OEE,75.31,95,-10.02,HIGH,fact_hourly_production,Contain affected material lot,EMP-0111,REJECTED
+DEC-00092,2026-09-14,IN-KA-01,OEE,72.21,95,-2.03,MEDIUM,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0026,COMPLETED
+DEC-00093,2026-09-29,IN-KA-01,OEE,92.59,95,-6.84,HIGH,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0161,COMPLETED
+DEC-00094,2026-08-12,IN-TN-01,OTIF,86.6,90,-3.1,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0087,COMPLETED
+DEC-00095,2026-10-11,IN-TN-01,FPY,88.84,90,-10.1,LOW,fact_hourly_production,Rebalance line staffing,EMP-0129,OPEN
+DEC-00096,2026-09-01,IN-KA-01,FPY,85.41,98,1.53,MEDIUM,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0107,REJECTED
+DEC-00097,2026-08-10,IN-KA-01,DOWNTIME_MIN,94.6,90,-2.84,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0049,REJECTED
+DEC-00098,2026-10-03,IN-KA-01,FPY,95.42,90,-1.44,LOW,fact_hourly_production,Expedite critical component,EMP-0028,APPROVED
+DEC-00099,2026-10-20,IN-KA-01,DOWNTIME_MIN,73.21,95,0.25,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0100,COMPLETED
+DEC-00100,2026-09-01,IN-KA-01,OTIF,74.58,98,-4.28,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0091,OPEN
+DEC-00101,2026-09-27,IN-TN-01,FPY,84.39,95,1.27,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0068,REJECTED
+DEC-00102,2026-09-25,IN-KA-01,DOWNTIME_MIN,70.19,95,0.31,LOW,fact_hourly_production,Contain affected material lot,EMP-0145,APPROVED
+DEC-00103,2026-08-31,IN-TN-01,DOWNTIME_MIN,86.17,98,-10.49,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0008,COMPLETED
+DEC-00104,2026-09-17,IN-KA-01,ENERGY_PER_UNIT,77.8,98,2.91,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0176,REJECTED
+DEC-00105,2026-08-17,IN-KA-01,OTIF,96.31,98,-5.71,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0039,APPROVED
+DEC-00106,2026-08-20,IN-KA-01,COST_PER_UNIT,98.95,98,6.68,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0123,REJECTED
+DEC-00107,2026-10-04,IN-KA-01,OEE,93.76,90,-3.78,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0170,COMPLETED
+DEC-00108,2026-09-18,IN-KA-01,FPY,87.99,95,7.98,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0149,APPROVED
+DEC-00109,2026-10-28,IN-TN-01,FPY,88.88,95,5.24,MEDIUM,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0161,OPEN
+DEC-00110,2026-10-28,IN-KA-01,DOWNTIME_MIN,74.45,95,-5.45,LOW,fact_quality_inspection,Expedite critical component,EMP-0073,REJECTED
+DEC-00111,2026-10-20,IN-TN-01,ENERGY_PER_UNIT,88.77,90,7.8,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0147,OPEN
+DEC-00112,2026-08-21,IN-KA-01,OEE,83.25,95,-6.97,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0050,COMPLETED
+DEC-00113,2026-10-11,IN-TN-01,OTIF,88.22,90,5.78,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0143,REJECTED
+DEC-00114,2026-08-07,IN-TN-01,COST_PER_UNIT,72.85,98,-7.66,LOW,fact_hourly_production,Review top downtime loss,EMP-0069,APPROVED
+DEC-00115,2026-08-15,IN-KA-01,ENERGY_PER_UNIT,71.6,98,2.49,HIGH,fact_hourly_production,Contain affected material lot,EMP-0169,COMPLETED
+DEC-00116,2026-10-10,IN-TN-01,ENERGY_PER_UNIT,82.86,95,-2.16,HIGH,fact_hourly_production,Contain affected material lot,EMP-0073,APPROVED
+DEC-00117,2026-09-18,IN-KA-01,ENERGY_PER_UNIT,88.94,98,-6.43,LOW,fact_hourly_production,Contain affected material lot,EMP-0110,OPEN
+DEC-00118,2026-10-03,IN-KA-01,COST_PER_UNIT,91.51,90,7.51,MEDIUM,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0075,REJECTED
+DEC-00119,2026-08-12,IN-TN-01,COST_PER_UNIT,75.61,98,-1.99,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0134,REJECTED
+DEC-00120,2026-08-13,IN-TN-01,DOWNTIME_MIN,80.08,90,-3.95,LOW,fact_hourly_production,Rebalance line staffing,EMP-0014,APPROVED
+DEC-00121,2026-08-30,IN-KA-01,OEE,76.15,95,2.83,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0178,COMPLETED
+DEC-00122,2026-10-22,IN-TN-01,OEE,95.33,90,7.99,LOW,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0162,APPROVED
+DEC-00123,2026-10-05,IN-KA-01,OEE,70.53,90,-7.32,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0049,REJECTED
+DEC-00124,2026-10-27,IN-KA-01,OTIF,71.02,98,-7.9,HIGH,fact_quality_inspection,Expedite critical component,EMP-0056,APPROVED
+DEC-00125,2026-08-01,IN-TN-01,OTIF,94.45,98,-10.32,LOW,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0076,APPROVED
+DEC-00126,2026-08-05,IN-KA-01,DOWNTIME_MIN,84.43,95,-2.67,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0157,REJECTED
+DEC-00127,2026-08-23,IN-TN-01,ENERGY_PER_UNIT,91.55,90,-10.71,HIGH,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0042,APPROVED
+DEC-00128,2026-10-21,IN-TN-01,DOWNTIME_MIN,93.58,95,2.66,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0104,REJECTED
+DEC-00129,2026-08-24,IN-TN-01,OEE,91.66,90,3.05,HIGH,fact_hourly_production,Review top downtime loss,EMP-0135,REJECTED
+DEC-00130,2026-09-18,IN-KA-01,FPY,74.69,98,-8.01,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0080,COMPLETED
+DEC-00131,2026-10-11,IN-KA-01,FPY,97.61,95,-3.43,LOW,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0173,OPEN
+DEC-00132,2026-10-03,IN-TN-01,ENERGY_PER_UNIT,88.11,95,4.54,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0055,REJECTED
+DEC-00133,2026-09-10,IN-TN-01,OEE,95.76,98,-5.74,HIGH,fact_quality_inspection,Review top downtime loss,EMP-0101,REJECTED
+DEC-00134,2026-08-22,IN-KA-01,OTIF,98.17,98,-5.15,LOW,fact_quality_inspection,Expedite critical component,EMP-0096,APPROVED
+DEC-00135,2026-10-05,IN-KA-01,OEE,91.38,98,1.09,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0057,COMPLETED
+DEC-00136,2026-10-11,IN-KA-01,ENERGY_PER_UNIT,86.48,95,0.96,MEDIUM,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0073,APPROVED
+DEC-00137,2026-10-17,IN-TN-01,OTIF,74.32,98,6.42,HIGH,fact_hourly_production,Rebalance line staffing,EMP-0041,OPEN
+DEC-00138,2026-09-30,IN-TN-01,OTIF,71.49,98,5.84,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0112,OPEN
+DEC-00139,2026-08-22,IN-KA-01,COST_PER_UNIT,95.77,95,-10.25,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0008,REJECTED
+DEC-00140,2026-09-17,IN-TN-01,COST_PER_UNIT,84.79,98,0.38,LOW,fact_hourly_production,Rebalance line staffing,EMP-0032,REJECTED
+DEC-00141,2026-09-21,IN-TN-01,OEE,86.82,95,-9.18,MEDIUM,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0158,REJECTED
+DEC-00142,2026-09-13,IN-TN-01,DOWNTIME_MIN,78.99,98,7.67,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0054,OPEN
+DEC-00143,2026-10-11,IN-KA-01,OTIF,98.24,98,2.81,LOW,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0026,COMPLETED
+DEC-00144,2026-09-23,IN-TN-01,ENERGY_PER_UNIT,95.28,90,-5.95,HIGH,fact_quality_inspection,Investigate energy baseload,EMP-0125,OPEN
+DEC-00145,2026-08-24,IN-TN-01,OTIF,72.46,98,3.07,HIGH,fact_quality_inspection,Expedite critical component,EMP-0130,APPROVED
+DEC-00146,2026-09-20,IN-TN-01,OTIF,88.74,98,-10.53,HIGH,fact_hourly_production,Contain affected material lot,EMP-0004,APPROVED
+DEC-00147,2026-10-09,IN-TN-01,OTIF,83.9,98,7.73,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0049,COMPLETED
+DEC-00148,2026-08-03,IN-TN-01,FPY,79.92,98,-9.7,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0153,APPROVED
+DEC-00149,2026-10-10,IN-TN-01,COST_PER_UNIT,81.57,90,3.13,HIGH,fact_hourly_production,Contain affected material lot,EMP-0118,REJECTED
+DEC-00150,2026-10-23,IN-TN-01,DOWNTIME_MIN,74.77,98,-2.54,HIGH,fact_hourly_production,Expedite critical component,EMP-0163,OPEN
+DEC-00151,2026-09-12,IN-KA-01,COST_PER_UNIT,81.99,95,0.55,LOW,fact_quality_inspection,Contain affected material lot,EMP-0017,COMPLETED
+DEC-00152,2026-08-15,IN-KA-01,COST_PER_UNIT,76.25,95,-6.2,LOW,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0167,REJECTED
+DEC-00153,2026-09-26,IN-TN-01,DOWNTIME_MIN,83.44,90,-10.64,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0055,REJECTED
+DEC-00154,2026-09-15,IN-TN-01,FPY,84.3,98,-5.9,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0123,REJECTED
+DEC-00155,2026-10-02,IN-TN-01,ENERGY_PER_UNIT,92.55,90,-10.08,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0110,APPROVED
+DEC-00156,2026-10-02,IN-KA-01,COST_PER_UNIT,75.97,90,-6.41,MEDIUM,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0088,COMPLETED
+DEC-00157,2026-10-06,IN-TN-01,DOWNTIME_MIN,80.07,90,-6.93,MEDIUM,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0128,OPEN
+DEC-00158,2026-10-25,IN-KA-01,COST_PER_UNIT,80.31,90,-7.2,LOW,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0104,OPEN
+DEC-00159,2026-10-01,IN-TN-01,FPY,70.31,90,3.87,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0060,REJECTED
+DEC-00160,2026-09-03,IN-TN-01,COST_PER_UNIT,86.48,90,0.42,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0081,REJECTED
+DEC-00161,2026-08-30,IN-KA-01,COST_PER_UNIT,95.82,95,-8.15,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0141,COMPLETED
+DEC-00162,2026-10-22,IN-TN-01,OEE,97.15,90,-7.5,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0006,APPROVED
+DEC-00163,2026-10-20,IN-TN-01,OTIF,98.04,98,6.99,LOW,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0035,APPROVED
+DEC-00164,2026-08-08,IN-TN-01,ENERGY_PER_UNIT,85.22,95,2.61,HIGH,fact_quality_inspection,Investigate energy baseload,EMP-0164,REJECTED
+DEC-00165,2026-08-14,IN-KA-01,OEE,96.64,90,-2.31,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0024,OPEN
+DEC-00166,2026-08-26,IN-KA-01,ENERGY_PER_UNIT,86.8,95,-1.23,HIGH,fact_quality_inspection,Expedite critical component,EMP-0031,APPROVED
+DEC-00167,2026-08-25,IN-TN-01,COST_PER_UNIT,75.74,98,-11.6,LOW,fact_hourly_production,Contain affected material lot,EMP-0065,COMPLETED
+DEC-00168,2026-09-24,IN-KA-01,OTIF,86.91,98,-5.36,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0111,REJECTED
+DEC-00169,2026-10-22,IN-KA-01,COST_PER_UNIT,87.05,95,-8.56,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0043,OPEN
+DEC-00170,2026-08-15,IN-TN-01,OEE,78.56,98,-9.63,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0086,REJECTED
+DEC-00171,2026-08-11,IN-KA-01,OEE,72.19,90,-0.31,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0158,REJECTED
+DEC-00172,2026-08-02,IN-TN-01,OEE,72.66,95,-9.11,HIGH,fact_hourly_production,Contain affected material lot,EMP-0072,REJECTED
+DEC-00173,2026-08-25,IN-TN-01,DOWNTIME_MIN,70.24,90,6.26,MEDIUM,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0013,APPROVED
+DEC-00174,2026-09-04,IN-TN-01,DOWNTIME_MIN,85.51,95,-11.4,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0082,COMPLETED
+DEC-00175,2026-08-12,IN-TN-01,OEE,89.7,98,-11.17,LOW,fact_hourly_production,Rebalance line staffing,EMP-0170,OPEN
+DEC-00176,2026-10-06,IN-KA-01,ENERGY_PER_UNIT,72.69,98,-6.35,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0077,COMPLETED
+DEC-00177,2026-08-16,IN-TN-01,FPY,92.5,98,-0.81,HIGH,fact_hourly_production,Expedite critical component,EMP-0176,COMPLETED
+DEC-00178,2026-09-11,IN-TN-01,DOWNTIME_MIN,96.16,95,0.8,MEDIUM,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0167,REJECTED
+DEC-00179,2026-10-01,IN-TN-01,DOWNTIME_MIN,93.72,90,-0.59,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0112,OPEN
+DEC-00180,2026-10-22,IN-TN-01,OEE,75.62,90,-4.68,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0088,OPEN
+DEC-00181,2026-09-03,IN-TN-01,DOWNTIME_MIN,95.66,98,7.84,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0085,REJECTED
+DEC-00182,2026-09-20,IN-TN-01,OEE,78.12,98,2.52,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0178,COMPLETED
+DEC-00183,2026-08-18,IN-KA-01,OEE,80.12,90,4.57,LOW,fact_quality_inspection,Rebalance line staffing,EMP-0133,REJECTED
+DEC-00184,2026-08-31,IN-TN-01,OEE,87.96,90,-10.03,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0082,OPEN
+DEC-00185,2026-09-27,IN-TN-01,FPY,72.76,98,6.15,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0008,REJECTED
+DEC-00186,2026-08-29,IN-TN-01,ENERGY_PER_UNIT,82.4,90,-0.07,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0018,OPEN
+DEC-00187,2026-08-31,IN-TN-01,COST_PER_UNIT,90.11,95,-4.85,LOW,fact_hourly_production,Expedite critical component,EMP-0077,REJECTED
+DEC-00188,2026-08-26,IN-TN-01,ENERGY_PER_UNIT,86.8,90,-8.93,HIGH,fact_quality_inspection,Investigate energy baseload,EMP-0173,APPROVED
+DEC-00189,2026-08-20,IN-KA-01,FPY,86.32,90,5.18,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0174,OPEN
+DEC-00190,2026-08-20,IN-TN-01,OTIF,75.68,98,1.11,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0090,OPEN
+DEC-00191,2026-09-02,IN-KA-01,DOWNTIME_MIN,94.15,98,-7.87,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0067,COMPLETED
+DEC-00192,2026-10-08,IN-TN-01,OEE,72.1,98,7.6,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0139,REJECTED
+DEC-00193,2026-09-27,IN-KA-01,DOWNTIME_MIN,91.63,98,-6.48,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0165,REJECTED
+DEC-00194,2026-09-06,IN-KA-01,DOWNTIME_MIN,70.96,95,2.28,LOW,fact_quality_inspection,Expedite critical component,EMP-0026,COMPLETED
+DEC-00195,2026-08-24,IN-KA-01,FPY,92.1,90,-0.16,LOW,fact_quality_inspection,Review top downtime loss,EMP-0176,APPROVED
+DEC-00196,2026-09-04,IN-TN-01,ENERGY_PER_UNIT,91.01,98,-0.68,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0179,REJECTED
+DEC-00197,2026-09-26,IN-TN-01,ENERGY_PER_UNIT,84.21,95,-1.69,HIGH,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0060,COMPLETED
+DEC-00198,2026-08-06,IN-KA-01,DOWNTIME_MIN,85.46,90,7.65,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0044,OPEN
+DEC-00199,2026-08-15,IN-TN-01,COST_PER_UNIT,97.54,98,1.98,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0082,COMPLETED
+DEC-00200,2026-08-25,IN-TN-01,COST_PER_UNIT,95.17,98,3.99,LOW,fact_quality_inspection,Review top downtime loss,EMP-0096,APPROVED
+DEC-00201,2026-08-29,IN-TN-01,COST_PER_UNIT,96.53,90,-7.89,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0008,COMPLETED
+DEC-00202,2026-10-04,IN-TN-01,OEE,70.01,90,-4.23,HIGH,fact_hourly_production,Expedite critical component,EMP-0171,COMPLETED
+DEC-00203,2026-09-04,IN-TN-01,OTIF,73.58,98,-0.79,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0131,APPROVED
+DEC-00204,2026-08-16,IN-KA-01,FPY,85.52,95,1.6,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0147,REJECTED
+DEC-00205,2026-09-21,IN-KA-01,DOWNTIME_MIN,90.48,98,1.76,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0092,OPEN
+DEC-00206,2026-10-23,IN-KA-01,ENERGY_PER_UNIT,87.68,98,-10.02,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0034,COMPLETED
+DEC-00207,2026-08-04,IN-TN-01,FPY,95.99,98,-6.42,HIGH,fact_hourly_production,Investigate energy baseload,EMP-0116,OPEN
+DEC-00208,2026-09-05,IN-TN-01,DOWNTIME_MIN,95.47,90,0.63,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0064,APPROVED
+DEC-00209,2026-09-01,IN-TN-01,COST_PER_UNIT,79.32,95,3.82,HIGH,fact_hourly_production,Expedite critical component,EMP-0166,OPEN
+DEC-00210,2026-10-04,IN-TN-01,OTIF,92.17,95,6.15,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0146,REJECTED
+DEC-00211,2026-09-17,IN-KA-01,COST_PER_UNIT,73.7,95,-1.41,HIGH,fact_hourly_production,Contain affected material lot,EMP-0113,OPEN
+DEC-00212,2026-09-13,IN-KA-01,OEE,77.86,95,-11.83,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0041,APPROVED
+DEC-00213,2026-08-10,IN-TN-01,OEE,71.54,95,-5.7,LOW,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0095,COMPLETED
+DEC-00214,2026-10-11,IN-KA-01,ENERGY_PER_UNIT,85.54,90,-6.99,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0062,COMPLETED
+DEC-00215,2026-10-15,IN-TN-01,OEE,98.67,98,0.67,HIGH,fact_quality_inspection,Review top downtime loss,EMP-0100,REJECTED
+DEC-00216,2026-10-17,IN-KA-01,OEE,70.13,95,-8.95,HIGH,fact_quality_inspection,Investigate energy baseload,EMP-0099,COMPLETED
+DEC-00217,2026-10-13,IN-TN-01,OTIF,85.83,98,0.6,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0078,COMPLETED
+DEC-00218,2026-09-23,IN-KA-01,ENERGY_PER_UNIT,77.98,98,-9.74,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0016,REJECTED
+DEC-00219,2026-09-08,IN-KA-01,COST_PER_UNIT,98.76,90,5.36,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0080,APPROVED
+DEC-00220,2026-09-19,IN-KA-01,OTIF,94.7,98,1.2,HIGH,fact_quality_inspection,Expedite critical component,EMP-0096,APPROVED
+DEC-00221,2026-08-26,IN-TN-01,FPY,76.29,98,1.5,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0029,COMPLETED
+DEC-00222,2026-08-12,IN-TN-01,COST_PER_UNIT,94.84,98,-6.88,HIGH,fact_quality_inspection,Expedite critical component,EMP-0135,APPROVED
+DEC-00223,2026-09-26,IN-TN-01,FPY,82.45,98,-6.77,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0131,REJECTED
+DEC-00224,2026-09-01,IN-KA-01,DOWNTIME_MIN,90.95,90,2.14,LOW,fact_quality_inspection,Review top downtime loss,EMP-0101,REJECTED
+DEC-00225,2026-08-15,IN-TN-01,DOWNTIME_MIN,83.37,98,-3.82,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0116,COMPLETED
+DEC-00226,2026-08-29,IN-TN-01,OEE,84.43,95,5.32,HIGH,fact_hourly_production,Review top downtime loss,EMP-0179,REJECTED
+DEC-00227,2026-10-26,IN-TN-01,FPY,70.67,95,-3.75,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0102,COMPLETED
+DEC-00228,2026-09-25,IN-TN-01,OTIF,87.2,98,-10.14,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0145,COMPLETED
+DEC-00229,2026-10-13,IN-KA-01,ENERGY_PER_UNIT,71.07,95,2.12,LOW,fact_hourly_production,Expedite critical component,EMP-0163,REJECTED
+DEC-00230,2026-10-21,IN-TN-01,COST_PER_UNIT,96.35,95,-9.35,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0082,REJECTED
+DEC-00231,2026-09-06,IN-KA-01,DOWNTIME_MIN,79.26,90,6.71,HIGH,fact_hourly_production,Review top downtime loss,EMP-0066,REJECTED
+DEC-00232,2026-09-23,IN-TN-01,OEE,93.06,98,-0.76,LOW,fact_hourly_production,Contain affected material lot,EMP-0062,OPEN
+DEC-00233,2026-10-05,IN-KA-01,ENERGY_PER_UNIT,91.47,90,3.99,HIGH,fact_hourly_production,Investigate energy baseload,EMP-0026,OPEN
+DEC-00234,2026-10-09,IN-TN-01,OTIF,73.68,90,-8.11,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0048,OPEN
+DEC-00235,2026-10-07,IN-TN-01,FPY,86.12,95,-8.75,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0019,COMPLETED
+DEC-00236,2026-08-20,IN-TN-01,DOWNTIME_MIN,81.25,98,-3.09,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0176,COMPLETED
+DEC-00237,2026-09-10,IN-TN-01,OTIF,97.7,90,1.05,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0105,REJECTED
+DEC-00238,2026-09-15,IN-TN-01,ENERGY_PER_UNIT,85.03,98,7.72,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0141,APPROVED
+DEC-00239,2026-09-25,IN-TN-01,COST_PER_UNIT,79.12,95,-9.19,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0176,COMPLETED
+DEC-00240,2026-10-21,IN-TN-01,ENERGY_PER_UNIT,81.71,98,5.94,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0022,APPROVED
+DEC-00241,2026-09-22,IN-KA-01,DOWNTIME_MIN,72.17,98,7.8,LOW,fact_hourly_production,Investigate energy baseload,EMP-0078,COMPLETED
+DEC-00242,2026-09-02,IN-TN-01,FPY,71.12,98,-0.63,HIGH,fact_hourly_production,Investigate energy baseload,EMP-0022,REJECTED
+DEC-00243,2026-10-23,IN-KA-01,COST_PER_UNIT,87.15,98,-7.38,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0134,REJECTED
+DEC-00244,2026-08-21,IN-KA-01,FPY,80.76,95,-1.9,LOW,fact_quality_inspection,Review top downtime loss,EMP-0042,COMPLETED
+DEC-00245,2026-09-15,IN-KA-01,OTIF,78.25,90,-4.82,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0008,OPEN
+DEC-00246,2026-08-27,IN-KA-01,DOWNTIME_MIN,98.1,90,-6.56,LOW,fact_quality_inspection,Rebalance line staffing,EMP-0159,OPEN
+DEC-00247,2026-09-24,IN-TN-01,OTIF,73.78,95,-2.89,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0146,COMPLETED
+DEC-00248,2026-08-26,IN-TN-01,COST_PER_UNIT,77.66,98,-3.89,HIGH,fact_quality_inspection,Expedite critical component,EMP-0171,REJECTED
+DEC-00249,2026-08-17,IN-KA-01,DOWNTIME_MIN,90.01,95,-4.73,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0162,OPEN
+DEC-00250,2026-10-20,IN-KA-01,ENERGY_PER_UNIT,80.06,98,-0.41,HIGH,fact_hourly_production,Investigate energy baseload,EMP-0155,COMPLETED
+DEC-00251,2026-08-31,IN-TN-01,ENERGY_PER_UNIT,86.14,90,4.6,LOW,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0103,APPROVED
+DEC-00252,2026-09-19,IN-KA-01,ENERGY_PER_UNIT,73.33,98,1.5,LOW,fact_hourly_production,Investigate energy baseload,EMP-0153,COMPLETED
+DEC-00253,2026-08-02,IN-TN-01,OTIF,96.72,98,-9.62,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0172,COMPLETED
+DEC-00254,2026-09-14,IN-TN-01,OTIF,81.93,98,-8.6,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0165,APPROVED
+DEC-00255,2026-10-14,IN-KA-01,OEE,91.21,90,4.24,LOW,fact_quality_inspection,Investigate energy baseload,EMP-0045,APPROVED
+DEC-00256,2026-08-16,IN-TN-01,DOWNTIME_MIN,91.13,98,5.95,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0134,OPEN
+DEC-00257,2026-09-09,IN-TN-01,OEE,89.86,90,-8.48,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0149,COMPLETED
+DEC-00258,2026-09-01,IN-TN-01,OTIF,86.64,90,-7.13,LOW,fact_hourly_production,Investigate energy baseload,EMP-0113,APPROVED
+DEC-00259,2026-10-11,IN-KA-01,OTIF,83.98,98,-6.65,LOW,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0085,APPROVED
+DEC-00260,2026-09-09,IN-TN-01,OTIF,78.66,90,-9.29,MEDIUM,fact_quality_inspection,Expedite critical component,EMP-0082,OPEN
+DEC-00261,2026-10-23,IN-KA-01,OEE,94.57,98,6.52,MEDIUM,fact_quality_inspection,Expedite critical component,EMP-0108,COMPLETED
+DEC-00262,2026-10-17,IN-TN-01,COST_PER_UNIT,79.57,90,5.33,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0151,REJECTED
+DEC-00263,2026-10-07,IN-KA-01,COST_PER_UNIT,88.94,90,-9.04,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0034,OPEN
+DEC-00264,2026-10-28,IN-TN-01,OEE,81.71,95,-10.08,LOW,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0173,APPROVED
+DEC-00265,2026-09-03,IN-TN-01,OTIF,89.84,95,-1.98,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0078,COMPLETED
+DEC-00266,2026-08-04,IN-KA-01,COST_PER_UNIT,88.97,95,-5.85,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0027,OPEN
+DEC-00267,2026-10-22,IN-KA-01,OEE,94.33,90,-3.62,LOW,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0002,COMPLETED
+DEC-00268,2026-10-01,IN-KA-01,OEE,76.83,98,3.38,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0177,APPROVED
+DEC-00269,2026-10-20,IN-TN-01,ENERGY_PER_UNIT,71.45,98,-4.32,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0053,REJECTED
+DEC-00270,2026-08-17,IN-TN-01,COST_PER_UNIT,96.61,95,-7.26,LOW,fact_quality_inspection,Rebalance line staffing,EMP-0165,OPEN
+DEC-00271,2026-09-29,IN-KA-01,ENERGY_PER_UNIT,91.6,90,-1.69,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0053,APPROVED
+DEC-00272,2026-08-27,IN-TN-01,FPY,89.13,90,-0.25,MEDIUM,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0018,OPEN
+DEC-00273,2026-10-26,IN-TN-01,COST_PER_UNIT,89.02,98,-10.8,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0002,COMPLETED
+DEC-00274,2026-10-08,IN-TN-01,OTIF,84.23,90,7.49,LOW,fact_hourly_production,Rebalance line staffing,EMP-0006,COMPLETED
+DEC-00275,2026-09-15,IN-KA-01,OEE,75.59,95,-7.05,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0079,REJECTED
+DEC-00276,2026-08-09,IN-KA-01,DOWNTIME_MIN,94.69,90,-5.96,LOW,fact_hourly_production,Investigate energy baseload,EMP-0045,COMPLETED
+DEC-00277,2026-08-07,IN-KA-01,OTIF,84.25,95,6.46,LOW,fact_quality_inspection,Review top downtime loss,EMP-0175,OPEN
+DEC-00278,2026-09-01,IN-KA-01,OEE,92.72,98,-11.77,HIGH,fact_quality_inspection,Investigate energy baseload,EMP-0128,REJECTED
+DEC-00279,2026-10-04,IN-TN-01,FPY,70.45,98,-2.84,HIGH,fact_quality_inspection,Investigate energy baseload,EMP-0032,COMPLETED
+DEC-00280,2026-08-04,IN-KA-01,DOWNTIME_MIN,90.96,95,-1.54,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0046,COMPLETED
+DEC-00281,2026-08-12,IN-TN-01,FPY,89.21,98,-1.37,LOW,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0024,OPEN
+DEC-00282,2026-10-09,IN-KA-01,DOWNTIME_MIN,75.81,95,7.14,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0030,APPROVED
+DEC-00283,2026-08-13,IN-KA-01,DOWNTIME_MIN,89.1,95,-1.74,LOW,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0071,APPROVED
+DEC-00284,2026-08-18,IN-KA-01,OEE,84.19,90,-5.36,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0121,REJECTED
+DEC-00285,2026-09-25,IN-TN-01,OTIF,73.8,90,1.96,HIGH,fact_quality_inspection,Review top downtime loss,EMP-0180,APPROVED
+DEC-00286,2026-08-13,IN-KA-01,COST_PER_UNIT,76.29,98,-5.73,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0049,OPEN
+DEC-00287,2026-08-29,IN-TN-01,ENERGY_PER_UNIT,88.5,95,-5.62,HIGH,fact_hourly_production,Rebalance line staffing,EMP-0087,OPEN
+DEC-00288,2026-09-07,IN-TN-01,ENERGY_PER_UNIT,81.99,95,2.79,HIGH,fact_hourly_production,Expedite critical component,EMP-0126,COMPLETED
+DEC-00289,2026-10-09,IN-KA-01,ENERGY_PER_UNIT,70.29,90,3.69,LOW,fact_quality_inspection,Investigate energy baseload,EMP-0082,OPEN
+DEC-00290,2026-08-05,IN-KA-01,ENERGY_PER_UNIT,75.28,98,-11.02,HIGH,fact_quality_inspection,Review top downtime loss,EMP-0056,COMPLETED
+DEC-00291,2026-10-17,IN-TN-01,COST_PER_UNIT,87.38,90,5.49,LOW,fact_quality_inspection,Review top downtime loss,EMP-0103,APPROVED
+DEC-00292,2026-08-18,IN-TN-01,FPY,76.4,95,-0.96,MEDIUM,fact_quality_inspection,Expedite critical component,EMP-0008,OPEN
+DEC-00293,2026-10-07,IN-KA-01,OTIF,88.95,98,6.35,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0012,COMPLETED
+DEC-00294,2026-10-02,IN-TN-01,OTIF,78.23,90,1.13,MEDIUM,fact_quality_inspection,Expedite critical component,EMP-0026,COMPLETED
+DEC-00295,2026-10-05,IN-TN-01,COST_PER_UNIT,92.42,90,6.73,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0156,REJECTED
+DEC-00296,2026-08-13,IN-KA-01,ENERGY_PER_UNIT,73.08,98,4.38,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0174,OPEN
+DEC-00297,2026-08-16,IN-TN-01,OEE,86.3,95,6.75,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0051,COMPLETED
+DEC-00298,2026-08-30,IN-KA-01,COST_PER_UNIT,72.02,90,3.72,LOW,fact_quality_inspection,Investigate energy baseload,EMP-0006,REJECTED
+DEC-00299,2026-10-28,IN-TN-01,OTIF,97.7,98,3.31,MEDIUM,fact_quality_inspection,Expedite critical component,EMP-0121,APPROVED
+DEC-00300,2026-08-18,IN-TN-01,OTIF,88.69,98,-1.99,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0002,REJECTED
+DEC-00301,2026-10-04,IN-TN-01,COST_PER_UNIT,90.62,95,-2.12,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0039,OPEN
+DEC-00302,2026-10-16,IN-KA-01,OEE,72.91,98,-8.56,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0042,REJECTED
+DEC-00303,2026-10-19,IN-KA-01,OTIF,80.71,95,-7.66,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0180,COMPLETED
+DEC-00304,2026-10-14,IN-TN-01,ENERGY_PER_UNIT,72.22,90,-0.93,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0071,COMPLETED
+DEC-00305,2026-08-11,IN-TN-01,COST_PER_UNIT,80.84,98,-2.51,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0058,APPROVED
+DEC-00306,2026-10-22,IN-KA-01,FPY,82.83,95,-10.7,LOW,fact_quality_inspection,Rebalance line staffing,EMP-0030,COMPLETED
+DEC-00307,2026-08-21,IN-KA-01,COST_PER_UNIT,81.24,90,-3.48,LOW,fact_hourly_production,Investigate energy baseload,EMP-0167,OPEN
+DEC-00308,2026-08-21,IN-KA-01,OEE,70.99,98,-10.36,HIGH,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0084,OPEN
+DEC-00309,2026-09-17,IN-KA-01,COST_PER_UNIT,91.64,95,-9.43,LOW,fact_quality_inspection,Expedite critical component,EMP-0177,COMPLETED
+DEC-00310,2026-10-10,IN-TN-01,COST_PER_UNIT,71.29,95,-0.32,LOW,fact_quality_inspection,Contain affected material lot,EMP-0168,REJECTED
+DEC-00311,2026-09-03,IN-TN-01,COST_PER_UNIT,98.67,98,0.84,HIGH,fact_hourly_production,Contain affected material lot,EMP-0107,APPROVED
+DEC-00312,2026-08-19,IN-KA-01,OTIF,91.41,98,-10.93,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0091,REJECTED
+DEC-00313,2026-08-22,IN-TN-01,OTIF,94.7,95,7.72,HIGH,fact_hourly_production,Contain affected material lot,EMP-0068,OPEN
+DEC-00314,2026-08-27,IN-TN-01,DOWNTIME_MIN,80.84,90,-10.3,LOW,fact_quality_inspection,Review top downtime loss,EMP-0039,OPEN
+DEC-00315,2026-08-16,IN-TN-01,OTIF,92.39,98,-7.26,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0085,OPEN
+DEC-00316,2026-09-01,IN-KA-01,ENERGY_PER_UNIT,97.77,98,4.94,MEDIUM,fact_quality_inspection,Expedite critical component,EMP-0045,OPEN
+DEC-00317,2026-10-17,IN-KA-01,OEE,74.46,98,-10.13,LOW,fact_quality_inspection,Expedite critical component,EMP-0005,APPROVED
+DEC-00318,2026-08-13,IN-KA-01,FPY,92.53,98,-9.24,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0024,OPEN
+DEC-00319,2026-09-02,IN-TN-01,COST_PER_UNIT,83.66,90,7.26,LOW,fact_quality_inspection,Investigate energy baseload,EMP-0155,REJECTED
+DEC-00320,2026-10-11,IN-TN-01,OTIF,96.53,95,-10.78,HIGH,fact_quality_inspection,Investigate energy baseload,EMP-0118,OPEN
+DEC-00321,2026-09-07,IN-TN-01,COST_PER_UNIT,80.46,98,7.24,LOW,fact_hourly_production,Investigate energy baseload,EMP-0016,COMPLETED
+DEC-00322,2026-10-01,IN-KA-01,ENERGY_PER_UNIT,73.78,95,-7.57,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0034,OPEN
+DEC-00323,2026-09-20,IN-KA-01,DOWNTIME_MIN,94.05,98,4.28,HIGH,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0178,OPEN
+DEC-00324,2026-08-01,IN-TN-01,OTIF,91.82,98,2.86,HIGH,fact_hourly_production,Investigate energy baseload,EMP-0110,OPEN
+DEC-00325,2026-09-20,IN-KA-01,COST_PER_UNIT,78.11,98,-1.22,HIGH,fact_hourly_production,Review top downtime loss,EMP-0028,COMPLETED
+DEC-00326,2026-08-23,IN-KA-01,ENERGY_PER_UNIT,75.81,98,-11.06,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0177,APPROVED
+DEC-00327,2026-09-27,IN-KA-01,COST_PER_UNIT,87.4,95,-5.72,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0102,COMPLETED
+DEC-00328,2026-09-06,IN-KA-01,DOWNTIME_MIN,84.1,95,-7.88,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0123,COMPLETED
+DEC-00329,2026-08-19,IN-TN-01,ENERGY_PER_UNIT,70.58,90,-2.62,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0075,OPEN
+DEC-00330,2026-10-27,IN-TN-01,ENERGY_PER_UNIT,95.28,95,3.39,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0143,COMPLETED
+DEC-00331,2026-09-20,IN-TN-01,ENERGY_PER_UNIT,91.93,90,0.98,LOW,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0100,APPROVED
+DEC-00332,2026-08-04,IN-TN-01,ENERGY_PER_UNIT,86.82,95,0.21,LOW,fact_quality_inspection,Rebalance line staffing,EMP-0079,OPEN
+DEC-00333,2026-09-16,IN-TN-01,COST_PER_UNIT,89.51,90,-1.93,LOW,fact_hourly_production,Review top downtime loss,EMP-0041,COMPLETED
+DEC-00334,2026-08-15,IN-KA-01,ENERGY_PER_UNIT,90.5,98,-2.28,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0069,APPROVED
+DEC-00335,2026-09-17,IN-KA-01,COST_PER_UNIT,93.24,98,-0.93,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0097,OPEN
+DEC-00336,2026-09-19,IN-TN-01,ENERGY_PER_UNIT,75.36,98,-5.35,LOW,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0072,APPROVED
+DEC-00337,2026-09-02,IN-TN-01,DOWNTIME_MIN,83.07,90,5.91,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0019,REJECTED
+DEC-00338,2026-09-17,IN-TN-01,COST_PER_UNIT,82.54,90,-1.86,LOW,fact_hourly_production,Expedite critical component,EMP-0010,COMPLETED
+DEC-00339,2026-08-02,IN-KA-01,OTIF,85.79,90,-5.4,HIGH,fact_hourly_production,Expedite critical component,EMP-0165,APPROVED
+DEC-00340,2026-09-30,IN-TN-01,FPY,85.0,95,-2.32,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0165,REJECTED
+DEC-00341,2026-09-11,IN-TN-01,OEE,78.63,95,2.14,LOW,fact_quality_inspection,Contain affected material lot,EMP-0017,REJECTED
+DEC-00342,2026-10-14,IN-TN-01,FPY,90.41,95,4.96,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0007,COMPLETED
+DEC-00343,2026-08-14,IN-KA-01,COST_PER_UNIT,87.39,95,0.79,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0059,COMPLETED
+DEC-00344,2026-08-11,IN-TN-01,FPY,83.48,95,-6.84,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0020,OPEN
+DEC-00345,2026-10-26,IN-TN-01,ENERGY_PER_UNIT,89.04,95,-10.18,HIGH,fact_hourly_production,Rebalance line staffing,EMP-0118,REJECTED
+DEC-00346,2026-10-27,IN-TN-01,OTIF,70.98,98,-1.61,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0036,COMPLETED
+DEC-00347,2026-09-12,IN-KA-01,DOWNTIME_MIN,76.25,90,-5.1,HIGH,fact_quality_inspection,Investigate energy baseload,EMP-0022,REJECTED
+DEC-00348,2026-09-11,IN-KA-01,OTIF,92.16,95,-11.52,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0048,COMPLETED
+DEC-00349,2026-09-03,IN-KA-01,ENERGY_PER_UNIT,71.77,98,-0.51,MEDIUM,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0023,OPEN
+DEC-00350,2026-09-11,IN-TN-01,DOWNTIME_MIN,84.77,90,2.62,LOW,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0097,APPROVED
+DEC-00351,2026-10-17,IN-KA-01,OEE,87.32,95,4.27,LOW,fact_hourly_production,Review top downtime loss,EMP-0140,OPEN
+DEC-00352,2026-10-22,IN-KA-01,ENERGY_PER_UNIT,92.01,98,-7.7,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0070,OPEN
+DEC-00353,2026-09-25,IN-TN-01,OEE,86.27,90,3.71,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0033,COMPLETED
+DEC-00354,2026-09-26,IN-TN-01,COST_PER_UNIT,93.07,98,-6.22,LOW,fact_quality_inspection,Expedite critical component,EMP-0049,OPEN
+DEC-00355,2026-10-11,IN-TN-01,ENERGY_PER_UNIT,79.93,98,1.97,HIGH,fact_quality_inspection,Expedite critical component,EMP-0096,APPROVED
+DEC-00356,2026-10-13,IN-KA-01,DOWNTIME_MIN,83.61,95,-3.08,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0094,COMPLETED
+DEC-00357,2026-08-04,IN-TN-01,OTIF,74.99,95,5.51,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0098,REJECTED
+DEC-00358,2026-08-18,IN-KA-01,OTIF,94.98,95,-4.5,HIGH,fact_hourly_production,Review top downtime loss,EMP-0070,APPROVED
+DEC-00359,2026-09-03,IN-KA-01,COST_PER_UNIT,89.25,98,-5.97,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0163,REJECTED
+DEC-00360,2026-10-22,IN-KA-01,OEE,73.23,98,7.48,MEDIUM,fact_quality_inspection,Expedite critical component,EMP-0143,OPEN
+DEC-00361,2026-09-06,IN-TN-01,COST_PER_UNIT,98.87,95,-9.09,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0138,OPEN
+DEC-00362,2026-10-18,IN-TN-01,OEE,83.49,95,0.21,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0100,OPEN
+DEC-00363,2026-08-16,IN-KA-01,COST_PER_UNIT,97.99,98,-0.75,HIGH,fact_quality_inspection,Review top downtime loss,EMP-0133,COMPLETED
+DEC-00364,2026-09-07,IN-TN-01,COST_PER_UNIT,80.03,98,7.41,LOW,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0013,REJECTED
+DEC-00365,2026-09-06,IN-KA-01,COST_PER_UNIT,86.83,98,1.06,HIGH,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0021,COMPLETED
+DEC-00366,2026-09-09,IN-TN-01,COST_PER_UNIT,84.54,95,-10.44,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0165,REJECTED
+DEC-00367,2026-08-06,IN-TN-01,DOWNTIME_MIN,80.02,98,-10.9,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0144,APPROVED
+DEC-00368,2026-10-13,IN-TN-01,OTIF,79.92,95,-6.51,HIGH,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0136,OPEN
+DEC-00369,2026-10-01,IN-TN-01,ENERGY_PER_UNIT,76.96,98,4.37,LOW,fact_hourly_production,Contain affected material lot,EMP-0123,APPROVED
+DEC-00370,2026-10-28,IN-KA-01,OTIF,97.8,90,7.6,LOW,fact_hourly_production,Review top downtime loss,EMP-0051,COMPLETED
+DEC-00371,2026-10-20,IN-TN-01,FPY,80.03,90,-4.96,HIGH,fact_hourly_production,Rebalance line staffing,EMP-0051,REJECTED
+DEC-00372,2026-08-08,IN-TN-01,COST_PER_UNIT,77.11,95,1.26,LOW,fact_quality_inspection,Rebalance line staffing,EMP-0173,REJECTED
+DEC-00373,2026-10-01,IN-TN-01,DOWNTIME_MIN,77.03,90,-3.76,LOW,fact_hourly_production,Contain affected material lot,EMP-0104,COMPLETED
+DEC-00374,2026-10-13,IN-TN-01,OEE,75.83,98,-4.05,HIGH,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0067,OPEN
+DEC-00375,2026-09-06,IN-TN-01,OEE,94.36,98,-0.19,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0050,OPEN
+DEC-00376,2026-10-04,IN-TN-01,OEE,92.55,98,-11.6,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0042,OPEN
+DEC-00377,2026-10-19,IN-TN-01,OTIF,85.96,90,-3.07,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0171,APPROVED
+DEC-00378,2026-09-11,IN-TN-01,FPY,83.64,95,-3.55,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0160,COMPLETED
+DEC-00379,2026-10-05,IN-KA-01,FPY,81.41,95,0.49,LOW,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0103,COMPLETED
+DEC-00380,2026-09-20,IN-KA-01,DOWNTIME_MIN,75.04,98,4.05,LOW,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0151,OPEN
+DEC-00381,2026-09-08,IN-KA-01,ENERGY_PER_UNIT,75.86,95,0.79,HIGH,fact_quality_inspection,Review top downtime loss,EMP-0008,OPEN
+DEC-00382,2026-08-29,IN-TN-01,FPY,74.4,95,-9.58,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0107,APPROVED
+DEC-00383,2026-09-08,IN-TN-01,COST_PER_UNIT,86.98,95,3.38,LOW,fact_quality_inspection,Review top downtime loss,EMP-0118,REJECTED
+DEC-00384,2026-08-15,IN-TN-01,ENERGY_PER_UNIT,93.29,95,-1.0,HIGH,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0158,APPROVED
+DEC-00385,2026-08-18,IN-TN-01,ENERGY_PER_UNIT,96.36,90,-0.99,HIGH,fact_quality_inspection,Expedite critical component,EMP-0115,APPROVED
+DEC-00386,2026-10-02,IN-TN-01,DOWNTIME_MIN,90.06,98,-9.08,LOW,fact_quality_inspection,Expedite critical component,EMP-0034,APPROVED
+DEC-00387,2026-10-03,IN-KA-01,FPY,78.16,95,3.99,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0086,COMPLETED
+DEC-00388,2026-08-10,IN-TN-01,ENERGY_PER_UNIT,74.43,95,6.43,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0138,APPROVED
+DEC-00389,2026-08-18,IN-TN-01,ENERGY_PER_UNIT,76.79,95,-7.17,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0023,OPEN
+DEC-00390,2026-10-19,IN-TN-01,DOWNTIME_MIN,75.31,95,-4.34,LOW,fact_hourly_production,Investigate energy baseload,EMP-0114,OPEN
+DEC-00391,2026-10-15,IN-TN-01,COST_PER_UNIT,87.55,98,7.46,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0072,REJECTED
+DEC-00392,2026-09-01,IN-KA-01,COST_PER_UNIT,92.69,98,-0.58,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0088,REJECTED
+DEC-00393,2026-09-20,IN-KA-01,OEE,71.63,98,-11.9,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0105,APPROVED
+DEC-00394,2026-10-06,IN-KA-01,OTIF,87.59,98,6.83,LOW,fact_quality_inspection,Review top downtime loss,EMP-0084,COMPLETED
+DEC-00395,2026-10-21,IN-TN-01,OEE,83.47,95,0.59,LOW,fact_quality_inspection,Investigate energy baseload,EMP-0157,APPROVED
+DEC-00396,2026-10-10,IN-TN-01,OEE,70.11,98,-8.74,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0094,OPEN
+DEC-00397,2026-10-09,IN-TN-01,OTIF,86.3,98,-11.1,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0175,COMPLETED
+DEC-00398,2026-09-04,IN-KA-01,DOWNTIME_MIN,71.28,95,-11.57,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0038,APPROVED
+DEC-00399,2026-10-04,IN-KA-01,COST_PER_UNIT,84.63,90,4.11,HIGH,fact_quality_inspection,Review top downtime loss,EMP-0110,APPROVED
+DEC-00400,2026-10-01,IN-TN-01,FPY,95.97,98,-10.47,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0107,REJECTED
+DEC-00401,2026-10-08,IN-KA-01,DOWNTIME_MIN,82.03,98,-8.39,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0173,COMPLETED
+DEC-00402,2026-09-14,IN-TN-01,DOWNTIME_MIN,78.82,98,3.11,LOW,fact_hourly_production,Expedite critical component,EMP-0028,REJECTED
+DEC-00403,2026-09-08,IN-TN-01,COST_PER_UNIT,75.01,95,0.86,LOW,fact_quality_inspection,Investigate energy baseload,EMP-0170,REJECTED
+DEC-00404,2026-09-14,IN-TN-01,OTIF,91.38,95,4.0,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0175,REJECTED
+DEC-00405,2026-09-03,IN-KA-01,FPY,79.61,98,-2.22,LOW,fact_quality_inspection,Review top downtime loss,EMP-0091,COMPLETED
+DEC-00406,2026-09-06,IN-KA-01,OTIF,74.13,90,-6.21,HIGH,fact_hourly_production,Expedite critical component,EMP-0008,COMPLETED
+DEC-00407,2026-08-19,IN-KA-01,OEE,97.23,95,2.33,LOW,fact_quality_inspection,Expedite critical component,EMP-0134,COMPLETED
+DEC-00408,2026-08-29,IN-KA-01,COST_PER_UNIT,93.55,95,0.59,LOW,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0152,COMPLETED
+DEC-00409,2026-10-10,IN-KA-01,COST_PER_UNIT,71.47,95,-0.34,LOW,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0024,COMPLETED
+DEC-00410,2026-10-20,IN-KA-01,OTIF,98.41,90,-2.84,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0045,COMPLETED
+DEC-00411,2026-08-23,IN-KA-01,OEE,79.1,95,-5.92,MEDIUM,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0064,OPEN
+DEC-00412,2026-08-12,IN-TN-01,OEE,75.53,98,3.5,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0057,APPROVED
+DEC-00413,2026-08-19,IN-KA-01,FPY,82.04,98,-2.33,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0180,COMPLETED
+DEC-00414,2026-10-24,IN-TN-01,OTIF,76.71,95,-5.7,HIGH,fact_quality_inspection,Review top downtime loss,EMP-0079,OPEN
+DEC-00415,2026-10-14,IN-KA-01,OEE,70.66,90,-2.28,HIGH,fact_machine_telemetry_hourly,Expedite critical component,EMP-0137,OPEN
+DEC-00416,2026-10-14,IN-KA-01,OEE,94.18,95,-0.54,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0062,OPEN
+DEC-00417,2026-08-10,IN-KA-01,COST_PER_UNIT,92.54,95,-7.78,MEDIUM,fact_hourly_production,Review top downtime loss,EMP-0178,REJECTED
+DEC-00418,2026-10-15,IN-TN-01,OTIF,72.04,90,-5.69,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0062,APPROVED
+DEC-00419,2026-08-08,IN-KA-01,FPY,81.19,98,-2.11,MEDIUM,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0045,APPROVED
+DEC-00420,2026-10-03,IN-KA-01,OTIF,79.67,95,-11.62,LOW,fact_hourly_production,Contain affected material lot,EMP-0047,COMPLETED
+DEC-00421,2026-08-29,IN-TN-01,DOWNTIME_MIN,91.26,98,-8.39,HIGH,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0091,OPEN
+DEC-00422,2026-08-15,IN-TN-01,ENERGY_PER_UNIT,85.63,90,-4.44,LOW,fact_hourly_production,Contain affected material lot,EMP-0171,COMPLETED
+DEC-00423,2026-10-20,IN-KA-01,ENERGY_PER_UNIT,79.79,90,7.12,LOW,fact_quality_inspection,Review top downtime loss,EMP-0146,REJECTED
+DEC-00424,2026-08-21,IN-TN-01,COST_PER_UNIT,86.11,90,-11.67,MEDIUM,fact_hourly_production,Rebalance line staffing,EMP-0051,REJECTED
+DEC-00425,2026-08-15,IN-KA-01,ENERGY_PER_UNIT,77.21,95,-6.29,LOW,fact_quality_inspection,Rebalance line staffing,EMP-0130,COMPLETED
+DEC-00426,2026-09-14,IN-KA-01,FPY,78.65,98,-3.27,LOW,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0036,APPROVED
+DEC-00427,2026-08-26,IN-TN-01,FPY,98.82,95,-9.13,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0006,APPROVED
+DEC-00428,2026-10-27,IN-KA-01,OEE,90.54,95,-9.69,LOW,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0108,REJECTED
+DEC-00429,2026-09-19,IN-TN-01,OTIF,93.47,98,6.5,LOW,fact_quality_inspection,Contain affected material lot,EMP-0147,COMPLETED
+DEC-00430,2026-09-23,IN-TN-01,OEE,90.28,90,-11.62,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0025,OPEN
+DEC-00431,2026-08-07,IN-KA-01,OEE,78.06,90,-2.24,LOW,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0121,APPROVED
+DEC-00432,2026-10-13,IN-TN-01,OEE,88.56,95,-1.02,LOW,fact_hourly_production,Contain affected material lot,EMP-0109,OPEN
+DEC-00433,2026-08-21,IN-KA-01,ENERGY_PER_UNIT,87.71,90,2.63,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0043,APPROVED
+DEC-00434,2026-10-05,IN-KA-01,OTIF,93.16,95,7.07,MEDIUM,fact_quality_inspection,Investigate energy baseload,EMP-0017,OPEN
+DEC-00435,2026-10-28,IN-KA-01,OTIF,91.48,90,-3.52,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0153,OPEN
+DEC-00436,2026-09-01,IN-KA-01,FPY,81.16,95,-4.79,LOW,fact_quality_inspection,Investigate energy baseload,EMP-0017,OPEN
+DEC-00437,2026-09-28,IN-TN-01,FPY,81.36,90,-10.79,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0116,APPROVED
+DEC-00438,2026-10-27,IN-TN-01,COST_PER_UNIT,86.6,90,-9.44,LOW,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0028,COMPLETED
+DEC-00439,2026-10-19,IN-KA-01,ENERGY_PER_UNIT,90.2,90,5.97,LOW,fact_hourly_production,Contain affected material lot,EMP-0009,OPEN
+DEC-00440,2026-10-25,IN-TN-01,ENERGY_PER_UNIT,83.68,98,6.39,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0129,APPROVED
+DEC-00441,2026-10-06,IN-KA-01,ENERGY_PER_UNIT,76.21,90,-6.19,LOW,fact_quality_inspection,Investigate energy baseload,EMP-0123,APPROVED
+DEC-00442,2026-09-27,IN-TN-01,DOWNTIME_MIN,91.45,95,0.26,MEDIUM,fact_machine_telemetry_hourly,Expedite critical component,EMP-0088,REJECTED
+DEC-00443,2026-10-06,IN-KA-01,OEE,83.3,98,1.52,LOW,fact_quality_inspection,Contain affected material lot,EMP-0008,COMPLETED
+DEC-00444,2026-08-19,IN-KA-01,ENERGY_PER_UNIT,87.5,98,1.05,MEDIUM,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0018,APPROVED
+DEC-00445,2026-10-16,IN-TN-01,FPY,88.63,98,-7.16,LOW,fact_hourly_production,Investigate energy baseload,EMP-0176,OPEN
+DEC-00446,2026-08-02,IN-KA-01,OEE,70.4,90,-2.72,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0017,REJECTED
+DEC-00447,2026-09-24,IN-TN-01,ENERGY_PER_UNIT,76.93,90,-9.82,LOW,fact_quality_inspection,Expedite critical component,EMP-0025,REJECTED
+DEC-00448,2026-10-10,IN-TN-01,FPY,88.03,90,-10.01,LOW,fact_hourly_production,Review top downtime loss,EMP-0162,COMPLETED
+DEC-00449,2026-10-26,IN-TN-01,COST_PER_UNIT,80.49,98,-3.61,LOW,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0044,REJECTED
+DEC-00450,2026-10-26,IN-TN-01,OTIF,74.27,90,-5.63,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0123,APPROVED
+DEC-00451,2026-08-17,IN-KA-01,ENERGY_PER_UNIT,81.94,98,0.52,MEDIUM,fact_quality_inspection,Rebalance line staffing,EMP-0021,OPEN
+DEC-00452,2026-09-09,IN-KA-01,ENERGY_PER_UNIT,82.96,90,3.25,LOW,fact_hourly_production,Expedite critical component,EMP-0065,APPROVED
+DEC-00453,2026-09-14,IN-TN-01,OTIF,91.62,95,6.29,MEDIUM,fact_quality_inspection,Expedite critical component,EMP-0101,APPROVED
+DEC-00454,2026-08-28,IN-TN-01,DOWNTIME_MIN,98.65,90,-7.22,MEDIUM,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0113,OPEN
+DEC-00455,2026-08-16,IN-KA-01,OTIF,96.54,90,-7.29,LOW,fact_machine_telemetry_hourly,Expedite critical component,EMP-0064,REJECTED
+DEC-00456,2026-09-24,IN-KA-01,DOWNTIME_MIN,79.46,90,-2.36,MEDIUM,fact_machine_telemetry_hourly,Rebalance line staffing,EMP-0168,REJECTED
+DEC-00457,2026-09-27,IN-TN-01,COST_PER_UNIT,85.28,95,2.85,HIGH,fact_quality_inspection,Expedite critical component,EMP-0077,OPEN
+DEC-00458,2026-09-09,IN-KA-01,OEE,78.8,95,2.43,HIGH,fact_hourly_production,Investigate energy baseload,EMP-0139,APPROVED
+DEC-00459,2026-10-16,IN-TN-01,ENERGY_PER_UNIT,85.91,90,-6.47,LOW,fact_hourly_production,Review top downtime loss,EMP-0106,APPROVED
+DEC-00460,2026-08-20,IN-TN-01,COST_PER_UNIT,74.92,98,-4.99,LOW,fact_hourly_production,Contain affected material lot,EMP-0075,REJECTED
+DEC-00461,2026-10-24,IN-TN-01,FPY,95.81,98,-4.1,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0108,REJECTED
+DEC-00462,2026-08-12,IN-KA-01,COST_PER_UNIT,74.57,95,-0.47,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0096,REJECTED
+DEC-00463,2026-10-11,IN-KA-01,DOWNTIME_MIN,87.87,90,-5.61,LOW,fact_hourly_production,Rebalance line staffing,EMP-0007,APPROVED
+DEC-00464,2026-08-28,IN-KA-01,ENERGY_PER_UNIT,71.3,90,-5.76,MEDIUM,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0097,COMPLETED
+DEC-00465,2026-08-07,IN-KA-01,COST_PER_UNIT,82.94,95,-1.31,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0176,APPROVED
+DEC-00466,2026-09-02,IN-KA-01,OEE,86.38,98,-5.61,LOW,fact_quality_inspection,Review top downtime loss,EMP-0023,OPEN
+DEC-00467,2026-09-21,IN-KA-01,OEE,83.28,98,-0.14,HIGH,fact_hourly_production,Investigate energy baseload,EMP-0046,APPROVED
+DEC-00468,2026-10-07,IN-KA-01,OEE,82.72,90,4.44,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0099,REJECTED
+DEC-00469,2026-09-24,IN-KA-01,OEE,82.83,90,-3.81,HIGH,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0049,OPEN
+DEC-00470,2026-08-17,IN-KA-01,OEE,95.53,95,4.77,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0123,COMPLETED
+DEC-00471,2026-08-01,IN-TN-01,DOWNTIME_MIN,78.23,95,-6.44,LOW,fact_quality_inspection,Review top downtime loss,EMP-0141,OPEN
+DEC-00472,2026-09-28,IN-TN-01,OTIF,95.28,98,1.55,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0058,APPROVED
+DEC-00473,2026-08-02,IN-TN-01,DOWNTIME_MIN,96.28,98,-8.16,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0011,OPEN
+DEC-00474,2026-09-19,IN-KA-01,FPY,80.45,98,-10.81,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0178,APPROVED
+DEC-00475,2026-10-19,IN-TN-01,DOWNTIME_MIN,95.67,90,1.23,LOW,fact_quality_inspection,Contain affected material lot,EMP-0175,APPROVED
+DEC-00476,2026-08-24,IN-KA-01,OTIF,91.51,95,1.43,HIGH,fact_hourly_production,Investigate energy baseload,EMP-0112,REJECTED
+DEC-00477,2026-10-20,IN-KA-01,OEE,84.8,98,6.71,LOW,fact_quality_inspection,Investigate energy baseload,EMP-0155,COMPLETED
+DEC-00478,2026-08-16,IN-KA-01,FPY,77.46,90,-9.65,HIGH,fact_quality_inspection,Expedite critical component,EMP-0135,OPEN
+DEC-00479,2026-08-03,IN-TN-01,DOWNTIME_MIN,81.0,90,-0.98,MEDIUM,fact_quality_inspection,Review top downtime loss,EMP-0075,REJECTED
+DEC-00480,2026-09-08,IN-TN-01,FPY,71.0,98,2.54,HIGH,fact_hourly_production,Contain affected material lot,EMP-0013,APPROVED
+DEC-00481,2026-10-24,IN-KA-01,FPY,73.73,90,2.25,MEDIUM,fact_hourly_production,Investigate energy baseload,EMP-0171,APPROVED
+DEC-00482,2026-10-18,IN-KA-01,OEE,93.19,98,-11.13,HIGH,fact_hourly_production,Investigate energy baseload,EMP-0087,APPROVED
+DEC-00483,2026-08-11,IN-TN-01,COST_PER_UNIT,84.88,98,-5.26,LOW,fact_hourly_production,Rebalance line staffing,EMP-0018,REJECTED
+DEC-00484,2026-09-23,IN-TN-01,DOWNTIME_MIN,73.0,98,-4.4,MEDIUM,fact_quality_inspection,Contain affected material lot,EMP-0009,COMPLETED
+DEC-00485,2026-10-05,IN-TN-01,FPY,95.69,90,-9.62,HIGH,fact_hourly_production,Expedite critical component,EMP-0172,REJECTED
+DEC-00486,2026-08-25,IN-TN-01,ENERGY_PER_UNIT,82.26,95,-5.5,LOW,fact_hourly_production,Review top downtime loss,EMP-0063,OPEN
+DEC-00487,2026-09-04,IN-KA-01,OEE,85.82,90,-10.28,MEDIUM,fact_hourly_production,Expedite critical component,EMP-0111,APPROVED
+DEC-00488,2026-08-22,IN-TN-01,COST_PER_UNIT,71.64,98,-6.1,HIGH,fact_quality_inspection,Review top downtime loss,EMP-0044,COMPLETED
+DEC-00489,2026-09-23,IN-KA-01,FPY,70.08,95,3.41,HIGH,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0016,REJECTED
+DEC-00490,2026-10-14,IN-KA-01,DOWNTIME_MIN,82.32,98,3.44,LOW,fact_machine_telemetry_hourly,Contain affected material lot,EMP-0081,REJECTED
+DEC-00491,2026-08-30,IN-KA-01,COST_PER_UNIT,90.93,98,-11.8,MEDIUM,fact_machine_telemetry_hourly,Investigate energy baseload,EMP-0045,REJECTED
+DEC-00492,2026-10-09,IN-KA-01,OTIF,79.34,98,-7.7,HIGH,fact_quality_inspection,Investigate energy baseload,EMP-0060,OPEN
+DEC-00493,2026-09-20,IN-KA-01,DOWNTIME_MIN,76.27,95,3.52,HIGH,fact_hourly_production,Expedite critical component,EMP-0130,APPROVED
+DEC-00494,2026-10-26,IN-KA-01,ENERGY_PER_UNIT,82.19,98,-8.72,HIGH,fact_hourly_production,Contain affected material lot,EMP-0134,REJECTED
+DEC-00495,2026-08-25,IN-TN-01,DOWNTIME_MIN,80.79,98,-1.53,MEDIUM,fact_machine_telemetry_hourly,Review top downtime loss,EMP-0138,OPEN
+DEC-00496,2026-10-15,IN-KA-01,FPY,96.35,90,1.11,LOW,fact_quality_inspection,Investigate energy baseload,EMP-0125,OPEN
+DEC-00497,2026-09-29,IN-TN-01,FPY,94.6,90,-7.69,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0113,OPEN
+DEC-00498,2026-10-03,IN-TN-01,OEE,71.31,98,-7.37,MEDIUM,fact_hourly_production,Contain affected material lot,EMP-0152,OPEN
+DEC-00499,2026-10-13,IN-KA-01,OEE,83.65,95,6.16,HIGH,fact_quality_inspection,Rebalance line staffing,EMP-0025,COMPLETED
+DEC-00500,2026-09-28,IN-KA-01,DOWNTIME_MIN,74.31,98,-1.82,HIGH,fact_quality_inspection,Contain affected material lot,EMP-0148,REJECTED

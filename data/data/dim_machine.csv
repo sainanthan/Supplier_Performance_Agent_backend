@@ -1,0 +1,16 @@
+machine_id,machine_name,machine_type,line_id,plant_id,criticality,commissioned_date,planned_maintenance_interval_days
+M-SMT-01,Yamaha YSM20R,Pick and Place,SMT-L1,IN-TN-01,A,2024-01-15,30
+M-SMT-02,Panasonic NPM-W2,Pick and Place,SMT-L2,IN-KA-01,A,2024-01-15,30
+M-REF-01,Heller 1809 MK5,Reflow Oven,SMT-L1,IN-TN-01,A,2024-01-15,30
+M-REF-02,BTU Pyramax,Reflow Oven,SMT-L2,IN-KA-01,A,2024-01-15,30
+M-AOI-01,Koh Young Zenith,AOI,SMT-L1,IN-TN-01,A,2024-01-15,30
+M-AOI-02,Omron VT-S730,AOI,SMT-L2,IN-KA-01,A,2024-01-15,30
+M-SPI-01,CyberOptics SE,SPI,SMT-L1,IN-TN-01,A,2024-01-15,30
+M-SPI-02,Koh Young KY8030,SPI,SMT-L2,IN-KA-01,A,2024-01-15,30
+M-FAL-01,Screw Fastening Cell 1,Assembly Cell,FAL-L1,IN-TN-01,B,2024-01-15,30
+M-FAL-02,Screw Fastening Cell 2,Assembly Cell,FAL-L2,IN-KA-01,B,2024-01-15,30
+M-RF-01,LitePoint IQxel,RF Tester,FAL-L1,IN-TN-01,B,2024-01-15,30
+M-CAM-01,Camera Calibration Rig,Camera Tester,FAL-L2,IN-KA-01,B,2024-01-15,30
+M-AGE-01,Aging Rack 96ch,Aging Chamber,FAL-L1,IN-TN-01,B,2024-01-15,30
+M-ICT-01,Keysight ICT,ICT Tester,SMT-L1,IN-KA-01,B,2024-01-15,30
+M-LEAK-01,IP Seal Tester,Leak Tester,FAL-L2,IN-TN-01,B,2024-01-15,30

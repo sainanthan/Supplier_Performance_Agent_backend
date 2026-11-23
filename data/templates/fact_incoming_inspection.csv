@@ -1,0 +1,1 @@
+inspection_lot_id,grn_id,po_id,po_line,supplier_id,material_id,material_lot_id,plant_id,inspection_date,inspected_qty,accepted_qty,rejected_qty,defect_code,usage_decision

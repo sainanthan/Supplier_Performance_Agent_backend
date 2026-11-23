@@ -1,0 +1,5 @@
+line_id,plant_id,line_type,nominal_capacity_per_hour,takt_time_sec,area
+SMT-L1,IN-TN-01,SMT,420,8.6,SMT
+SMT-L2,IN-KA-01,SMT,420,8.6,SMT
+FAL-L1,IN-TN-01,Final Assembly,300,12.0,FINAL_ASSEMBLY
+FAL-L2,IN-KA-01,Final Assembly,300,12.0,FINAL_ASSEMBLY

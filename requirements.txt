@@ -1,0 +1,22 @@
+fastapi
+uvicorn[standard]
+langchain-core
+httpx
+sqlalchemy>=2
+psycopg[binary]
+pydantic-settings
+numpy
+pytest>=8
+reportlab>=4
+python-pptx>=1
+searoute>=1.3
+cryptography>=43
+oracledb>=2          # Oracle thin mode (Apache-2.0 / UPL) - DI Phase 2
+pyodbc>=5            # SQL Server via Microsoft ODBC Driver 18 (MIT)
+paramiko>=3          # SSH tunnel with pinned host key (LGPL-2.1)
+sqlglot>=25          # SELECT-only parser guard for custom queries (MIT)
+certifi              # CA bundle for TLS verify-full
+openpyxl>=3.1         # Excel .xlsx parsing (MIT) - DI Phase 4
+python-multipart>=0.0.18  # file uploads (Apache-2.0)
+defusedxml>=0.7       # safe XML parsing of SAP $metadata (PSF)
+asyncua>=1.1          # OPC UA client, read-only use (LGPL-3.0)
