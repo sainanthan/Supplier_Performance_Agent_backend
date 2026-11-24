@@ -139,7 +139,11 @@ async def auth_middleware(request: Request, call_next):
         if write:
             _RESP.clear()
 app.add_middleware(GZipMiddleware, minimum_size=1000)   # JSON payloads shrink ~5-8x
-app.add_middleware(CORSMiddleware, allow_origins=[o.strip() for o in settings.cors_origins.split(",")],
+cors_origins = list(dict.fromkeys([
+    *(o.strip() for o in settings.cors_origins.split(",") if o.strip()),
+    "https://supplier-performance-agent-frontend-sable.vercel.app",
+]))
+app.add_middleware(CORSMiddleware, allow_origins=cors_origins,
                    allow_methods=["*"], allow_headers=["*"])
 
 

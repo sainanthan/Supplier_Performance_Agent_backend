@@ -39,7 +39,7 @@ class Settings(BaseSettings):
     # App
     data_dir: str = str(BACKEND_DIR / "data" / "data")
     data_schema: str = "sp"
-    cors_origins: str = "http://localhost:5173"
+    cors_origins: str = "http://localhost:5173,https://supplier-performance-agent-frontend-sable.vercel.app"
     agent_max_steps: int = 6
 
     @property
