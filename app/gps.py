@@ -232,3 +232,23 @@ def supplier_arrived(supplier_id: str, vehicle_id: str) -> int:
         _own_vehicle(c, supplier_id, vehicle_id)
         return c.execute(text("UPDATE public.vehicle_trips SET ended_at = now() WHERE vehicle_id = :v AND ended_at IS NULL"),
                          {"v": vehicle_id}).rowcount
+
+
+def vehicle_track(vehicle_id: str, limit: int = 300) -> dict:
+    """GPS page detail: the vehicle, its current (or last) trip, the PO lines it carries and its latest positions."""
+    with engine.connect() as c:
+        v = c.execute(text("""SELECT vehicle_id, kind, registration, carrier, device_type, active, last_seen, created_at
+                              FROM public.vehicles WHERE vehicle_id = :v"""), {"v": vehicle_id}).mappings().fetchone()
+        if not v:
+            raise LookupError(f"Unknown vehicle {vehicle_id}")
+        trip = c.execute(text("""SELECT trip_id, shipment_ids, started_at, ended_at FROM public.vehicle_trips
+                                 WHERE vehicle_id = :v ORDER BY (ended_at IS NULL) DESC, trip_id DESC LIMIT 1"""), {"v": vehicle_id}).mappings().fetchone()
+        pings, lines = [], []
+        if trip:
+            pings = [dict(r) for r in c.execute(text("""SELECT ts, lat, lon, speed_kmh, accuracy_m, source FROM public.gps_pings
+                                                        WHERE trip_id = :t ORDER BY ts DESC LIMIT :n"""), {"t": trip["trip_id"], "n": limit}).mappings()][::-1]
+            ids = list(trip["shipment_ids"] or [])
+            if ids:
+                lines = [dict(r) for r in c.execute(text("""SELECT po_id, po_line, supplier_id, supplier_name, material_name, plant_id, promised_date, ordered_qty
+                                                            FROM sp.v_po_delivery WHERE po_id || '-' || po_line = ANY(:k)"""), {"k": ids}).mappings()]
+    return {"vehicle": dict(v), "trip": dict(trip) if trip else None, "pings": pings, "lines": lines}

@@ -141,6 +141,7 @@ POLICY: list[tuple[str, str, tuple]] = [
     ("GET", r"^/api/materials/[^/]+/sourcing$", ("ADMIN", "PROCUREMENT")),
     ("GET", r"^/api/compare$", ("ADMIN", "PROCUREMENT")),
     ("GET", r"^/api/concentration$", ("ADMIN", "PROCUREMENT", "QUALITY")),
+    ("GET", r"^/api/concentration/trends$", ("ADMIN", "PROCUREMENT", "QUALITY")),
     # read-only analysis that is not persisted is open to every internal role
     ("POST", r"^/api/chat(/stream)?$", INTERNAL),
     ("POST", r"^/api/scorecard/simulate$", INTERNAL),

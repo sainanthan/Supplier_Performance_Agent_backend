@@ -212,13 +212,22 @@ def job_predict() -> dict:
     return PR.run("scheduler")
 
 
+def job_roll_forward() -> dict:
+    """Demo only: fill every missing day up to today so the app works as of today (flag rolling_demo_data)."""
+    from .features import is_on
+    if not is_on("rolling_demo_data"):
+        return {"skipped": "rolling_demo_data is off"}
+    from . import rollforward as RF
+    return RF.run()
+
+
 def job_followups() -> dict:
     """Automatic supplier follow-up for late PO lines: request, remind, escalate, close (flag auto_followup)."""
     from . import followup as FU
     return FU.run()
 
 
-JOBS = {"followups": job_followups, "refresh": job_refresh, "snapshot": job_snapshot, "alerts": job_alerts, "sla": job_sla, "disruptions": job_disruptions,
+JOBS = {"roll_forward": job_roll_forward, "followups": job_followups, "refresh": job_refresh, "snapshot": job_snapshot, "alerts": job_alerts, "sla": job_sla, "disruptions": job_disruptions,
         "gps_retention": job_gps_retention, "digest": job_digest,
         "quality_inquiries": job_quality_inquiries, "predict": job_predict}
 
@@ -256,7 +265,7 @@ def recent_runs(limit: int = 40) -> list[dict]:
 def _loop() -> None:
     time.sleep(90)                                    # let the cache warm first
     while True:
-        for name in ("refresh", "snapshot", "alerts", "sla", "disruptions", "gps_retention", "quality_inquiries", "predict", "followups"):
+        for name in ("roll_forward", "refresh", "snapshot", "alerts", "sla", "disruptions", "gps_retention", "quality_inquiries", "predict", "followups"):
             try:
                 run_job(name)
             except Exception:

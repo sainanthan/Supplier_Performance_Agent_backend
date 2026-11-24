@@ -427,6 +427,8 @@ FLAGS = [
     ("auto_followup", "AUTO1", "Automatic supplier follow-up: for every late PO line the agent asks the supplier (portal) to confirm a new "
                                "date within the reply window, reminds, escalates to procurement, records the reply; auto-approves small "
                                "promise-date changes requested before the original date (policy). Never e-mails suppliers"),
+    ("rolling_demo_data", "DATA1", "Demo data kept current: every missing day up to today is filled from the same weekday four "
+                                   "weeks earlier (dates +28 days, new ids, labelled ROLLING). Switch OFF once real feeds are connected"),
     ("plant_twin", "T4", "Plant digital twin: click a plant for docks, quality hold, warehouse stock, lines, days of cover per material, "
                          "arrivals in 24/72 h and lines exposed if a shipment is late"),
 ]

@@ -8,10 +8,8 @@ CREATE TABLE IF NOT EXISTS sp.meta (key TEXT PRIMARY KEY, value TEXT);
 -- so ageing and past-due logic do not inflate when the extract is older than today.
 -- Override:  INSERT INTO sp.meta VALUES ('as_of_date','2026-10-31') ON CONFLICT (key) DO UPDATE SET value=EXCLUDED.value;
 CREATE OR REPLACE FUNCTION sp.as_of_date() RETURNS date LANGUAGE sql STABLE SECURITY DEFINER SET search_path = sp, public AS $$
-  SELECT COALESCE((SELECT value::date FROM sp.meta WHERE key = 'as_of_date'),
-                  (SELECT GREATEST((SELECT MAX(inspection_ts)::date FROM sp.fact_quality_inspection),
-                                   (SELECT MAX(opened_ts)::date FROM sp.fact_ncr_capa))),
-                  CURRENT_DATE)
+  -- today, unless a fixed cut-off is pinned in sp.meta ('as_of_date'). The rolling_demo_data job keeps the data filled up to today.
+  SELECT COALESCE((SELECT value::date FROM sp.meta WHERE key = 'as_of_date'), CURRENT_DATE)
 $$;
 
 -- Numeric KPI definition from the approved config (public.app_config 'scorecard').

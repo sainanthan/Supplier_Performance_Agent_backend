@@ -101,8 +101,10 @@ def main() -> None:
     if a.load:
         with engine.begin() as c:
             c.execute(text("DELETE FROM sp.fact_inbound_milestone WHERE source = 'SYNTHETIC'"))
-            c.execute(text(f"INSERT INTO sp.fact_inbound_milestone ({', '.join(COLS)}) VALUES ({', '.join(':' + x for x in COLS)})"),
-                      [dict(zip(COLS, r)) for r in rows])
+            # lineage: label the file and stamp the load time, like every other loader
+            c.execute(text(f"INSERT INTO sp.fact_inbound_milestone ({', '.join(COLS)}, _source_system, _loaded_at) "
+                           f"VALUES ({', '.join(':' + x for x in COLS)}, :_src, now())"),
+                      [{**dict(zip(COLS, r)), "_src": f"SYNTHETIC:{OUT.name}"} for r in rows])
         print("loaded into sp.fact_inbound_milestone (source = SYNTHETIC); the twin will show 'Simulated demo data'")
 
 

@@ -1,0 +1,11 @@
+# secrets: set these in Render > Environment, never in git (.env.example shows the names)
+.env
+.env.*
+!.env.example
+
+# generated
+__pycache__/
+*.pyc
+.cache/
+.pytest_cache/
+.venv/

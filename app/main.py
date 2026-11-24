@@ -356,6 +356,11 @@ def concentration():
     return A.concentration_matrix()
 
 
+@app.get("/api/concentration/trends")
+def concentration_trends(plant_id: str | None = None, supplier_id: str | None = None, months: int = 12):
+    return A.material_spend_trends(plant_id, supplier_id, months)
+
+
 @app.post("/api/cache/clear")
 def cache_clear():
     """Used by the UI refresh button and after reloading data."""
@@ -1095,6 +1100,40 @@ def vehicles():
     from . import gps as G
     require("gps_tracking")
     return G.list_vehicles()
+
+
+@app.get("/api/vehicles/setup")
+def vehicles_setup():
+    """GPS page: will driver links work on phones? (browsers share location only from an https page)"""
+    require("gps_tracking")
+    url = os.environ.get("PUBLIC_APP_URL", "").strip().rstrip("/")
+    return {"public_url": url or None, "https": url.startswith("https://"),
+            "retention_days": get_scorecard_config().get("gps_retention_days", 90)}
+
+
+@app.get("/api/vehicles/{vehicle_id}/track")
+def vehicle_track(vehicle_id: str):
+    from . import gps as G
+    require("gps_tracking")
+    try:
+        out = G.vehicle_track(vehicle_id)
+    except LookupError as e:
+        raise HTTPException(404, str(e))
+    out["route"] = None                       # the planned road route of the trip's lane (supplier -> plant), for the map
+    ln = (out.get("lines") or [None])[0]
+    if ln:
+        try:
+            net = TR.tracker()
+            lane = next((l for l in net["lanes"] if l["id"] == f"{ln['supplier_id']}>{ln['plant_id']}"), None)
+            nodes = {n["id"]: n for n in net["nodes"]}
+            if lane and lane.get("path"):
+                o, d = nodes.get(ln["supplier_id"]), nodes.get(ln["plant_id"])
+                out["route"] = {"lane": lane["id"], "mode": lane.get("mode"), "path": lane["path"],
+                                "origin": {"name": o["name"], "lat": o["lat"], "lon": o["lon"]} if o else None,
+                                "dest": {"name": d["name"], "lat": d["lat"], "lon": d["lon"]} if d else None}
+        except Exception:  # noqa: BLE001
+            pass
+    return out
 
 
 @app.post("/api/vehicles")
@@ -2126,11 +2165,13 @@ def _readiness_one_query() -> dict | None:
     parts = []
     for i, (_n, table, _u, _t) in enumerate(READINESS):
         demo_col = "source" if table.endswith("inbound_milestone") else "_source_system"
-        demo = f"count(*) FILTER (WHERE COALESCE({demo_col}, '') LIKE 'SYNTHETIC%')" if table.startswith("sp.fact_") else "0"
-        parts.append(f"SELECT {i} AS i, count(*) AS n, {demo} AS d FROM {table}")
+        demo = (f"count(*) FILTER (WHERE COALESCE({demo_col}, '') LIKE 'SYNTHETIC%' OR COALESCE(_source_system, '') LIKE 'ROLLING%')"
+                if table.startswith("sp.fact_") else "0")
+        last = "MAX(_loaded_at)" if table.startswith("sp.fact_") else "NULL::timestamptz"   # when the table was last loaded (lineage stamp)
+        parts.append(f"SELECT {i} AS i, count(*) AS n, {demo} AS d, {last} AS l FROM {table}")
     try:
         with read_engine.connect() as c:
-            return {r[0]: (r[1], r[2]) for r in c.execute(text(" UNION ALL ".join(parts))).fetchall()}
+            return {r[0]: (r[1], r[2], r[3]) for r in c.execute(text(" UNION ALL ".join(parts))).fetchall()}
     except Exception:
         return None
 
@@ -2139,7 +2180,8 @@ def _data_readiness():
     got = _readiness_one_query()
     if got is not None:
         out = [{"source": name, "table": table, "rows": got[i][0], "demo_rows": got[i][1], "demo": bool(got[i][0]) and got[i][1] == got[i][0],
-                "unlocks": unlocks, "template": tmpl, "ready": bool(got[i][0])} for i, (name, table, unlocks, tmpl) in enumerate(READINESS)]
+                "unlocks": unlocks, "template": tmpl, "ready": bool(got[i][0]),
+                "last_loaded": got[i][2].isoformat() if got[i][2] else None} for i, (name, table, unlocks, tmpl) in enumerate(READINESS)]
         return {"sources": out, "ready": sum(1 for x in out if x["ready"]), "total": len(out)}
     out = []
     with read_engine.connect() as c:

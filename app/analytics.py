@@ -938,6 +938,27 @@ def concentration_matrix() -> list[dict]:
     return query(f"SELECT * FROM {S}.v_material_supplier_share ORDER BY material_id, share_pct DESC")
 
 
+def material_spend_trends(plant_id=None, supplier_id=None, months: int = 12) -> list[dict]:
+    months = max(1, min(int(months), 36))
+    where, params = _where(
+        None,
+        plant_id=plant_id,
+        supplier_id=supplier_id,
+        extra="delivery_status = 'RECEIVED' AND NOT excluded",
+    )
+    params["months"] = months
+    return query(f"""
+      SELECT date_trunc('month', p.receipt_date)::date AS period,
+             p.material_id, p.material_name, SUM(p.receipt_value_inr) AS spend_inr
+      FROM {S}.v_po_delivery p
+      WHERE {where}
+        AND p.receipt_date >= date_trunc('month', {S}.as_of_date()) - (:months - 1) * INTERVAL '1 month'
+        AND p.receipt_date <= {S}.as_of_date()
+      GROUP BY 1, 2, 3
+      ORDER BY 1, 2
+    """, **params)
+
+
 _WARMING = _threading.Lock()
 
 

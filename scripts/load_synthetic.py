@@ -3,7 +3,7 @@
 The real dataset has no goods receipts, incoming inspection, schedule agreements or invoices. This fills those tables from
 the clearly labelled SYNTHETIC_*.csv files (generated from the real PO lines by scripts/gen_sample_data.py), into the
 EXISTING tables (columns and lineage kept). Every row keeps _source_system =
-'SYNTHETIC:<file>', so it can always be told apart and removed again.
+'SYNTHETIC:<file>' and _loaded_at = the load time, so it can always be told apart, dated and removed again.
 
     python -m scripts.load_synthetic            # load (replaces earlier SYNTHETIC rows only)
     python -m scripts.load_synthetic --clear    # remove every SYNTHETIC row again
@@ -43,7 +43,8 @@ def main() -> None:
             keep = [k for k in rows[0] if k in cols]
             drop = [k for k in rows[0] if k not in cols]
             extra = ", _source_system" if "_source_system" in cols else ""
-            sql = text(f"INSERT INTO sp.{t} ({', '.join(keep)}{extra}) VALUES ({', '.join(':' + k for k in keep)}{', :_src' if extra else ''})")
+            stamp = ", _loaded_at" if "_loaded_at" in cols else ""          # when this load ran (shown on Settings > Data health)
+            sql = text(f"INSERT INTO sp.{t} ({', '.join(keep)}{extra}{stamp}) VALUES ({', '.join(':' + k for k in keep)}{', :_src' if extra else ''}{', now()' if stamp else ''})")
             c.execute(sql, [{**{k: (r[k] if r[k] != "" else None) for k in keep}, "_src": f"SYNTHETIC:{path.name}"} for r in rows])
             print(f"  loaded {len(rows):>5} SYNTHETIC rows into sp.{t}" + (f"  (columns not in table, skipped: {', '.join(drop)})" if drop else ""))
     print("Done. Clear the app cache (Refresh button) to see the new figures.")
